@@ -1,3 +1,8 @@
+# Edward's
+alias rs_edward_login="ssh edward@108.166.83.125"
+alias rs_deployer_login="ssh deployer@108.166.83.125"
+alias remove_all_DS_Store_recursive="find . -name '*.DS_Store' -type f -delete"
+
 # Todo
 alias todo='$EDITOR ~/.todo'
 
@@ -15,8 +20,36 @@ alias -g L='| wc -l'
 alias -g ONE="| awk '{ print \$1}'"
 
 # git
-alias g="git"
-alias gci="git pull --rebase && rake && git push"
+alias ga='git add'
+alias gaa='git add .'
+alias gb='git branch'
+alias gba='git branch -a'
+alias gc='git commit -v'
+alias gca='git commit -a'
+alias gcam='git commit -a -m'
+alias gcf='git commit -a --amend'
+alias gcfh='git commit --amend -C HEAD'
+alias gcm='git commit -m'
+alias gco='git checkout'
+alias gcom='gco master'
+alias gcow='gco work'
+alias gdep='gpo && cap deploy'
+alias gdepm='gpo && cap deploy:migrations'
+alias gfo='git fetch origin'
+alias gm='git merge'
+alias gp='git push'
+alias gpo='git push origin'
+alias gpom='gpo master'
+alias gpp='echo "=> Pulling changes from origin repository ..." && git pull origin master --rebase && echo "Pushing changes in branch master to origin repository ..." && git push origin master'
+alias gps='git push sikachu'
+alias gpu='git pull'
+alias gpuo='git pull origin'
+alias gpur='git pull --rebase'
+alias gr='git rebase'
+alias gra='git rebase --abort'
+alias grc='git rebase --continue'
+alias gs='git status'
+alias gsu='git submodule init; git submodule update'
 
 # Bundler
 alias b="bundle"

@@ -1,3 +1,6 @@
+#RVM
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
+
 # load our own completion functions
 fpath=(~/.zsh/completion $fpath)
 
@@ -8,18 +11,16 @@ compinit
 # automatically enter directories without cd
 setopt auto_cd
 
+# case insensitive completion for cd etc *N*
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*' 
+
 # use vim as an editor
-export EDITOR=vim
+export EDITOR="mate -w"
 
 # aliases
 if [ -e "$HOME/.aliases" ]; then
   source "$HOME/.aliases"
 fi
-
-# vi mode
-bindkey -v
-bindkey "^F" vi-cmd-mode
-bindkey jj vi-cmd-mode
 
 # use incremental search
 bindkey "^R" history-incremental-search-backward
@@ -36,9 +37,6 @@ bindkey -s "^T" "^[Isudo ^[A" # "t" for "toughguy"
 
 # expand functions in the prompt
 setopt prompt_subst
-
-# prompt
-export PS1='[${SSH_CONNECTION+"%n@%m:"}%~] '
 
 # ignore duplicate history entries
 setopt histignoredups
