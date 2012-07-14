@@ -4,6 +4,9 @@
 # load our own completion functions
 fpath=(~/.zsh/completion $fpath)
 
+# path
+export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/bin/psql:$PATH"
+
 # completion
 autoload -U compinit
 compinit
