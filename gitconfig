@@ -1,10 +1,13 @@
 [push]
   default = tracking
+
 [format]
   pretty = %Cblue%h%Creset %Cgreen[%ar]%Creset (%an) %s
+
 [user]
   name = Edward Loveall
   email = edward@edwardloveall.com
+
 [color]
   branch = auto
   diff = auto
@@ -22,11 +25,15 @@
   new = green bold
 
 [color "status"]
-  added = yellow
-  changed = green
+  added = green
+  changed = yellow
   untracked = cyan
 
 # Use `origin` as the default remote on the `master` branch in all cases
 [branch "master"]
   remote = origin
   merge = refs/heads/master
+
+# Use template dir for git repos
+[init]
+  templatedir = ~/.git_template
