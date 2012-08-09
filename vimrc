@@ -25,5 +25,19 @@ syntax on
 " Enable file type detection and do language-dependent indenting.
 filetype plugin indent on
 
+" Set tabs to two spaces
+
+set softtabstop=2
+set shiftwidth=2
+set expandtab
+
 " ====== Look & Feel ======
 colorscheme Tomorrow
+
+" ====== Additional Functionality ======
+
+" Automatically reloads changes to .vimrc
+augroup myvimrchooks
+    au!
+    autocmd bufwritepost .vimrc source ~/.vimrc
+augroup END
