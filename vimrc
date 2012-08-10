@@ -25,14 +25,15 @@ syntax on
 " Enable file type detection and do language-dependent indenting.
 filetype plugin indent on
 
-" Set tabs to two spaces
+" ====== Look & Feel ======
+colorscheme today
+set number
+set guifont=Inconsolata:h15
 
+" Set tabs to two spaces
 set softtabstop=2
 set shiftwidth=2
 set expandtab
-
-" ====== Look & Feel ======
-colorscheme e-tomorrow
 
 " ====== Additional Functionality ======
 
@@ -41,6 +42,8 @@ augroup myvimrchooks
     au!
     autocmd bufwritepost .vimrc source ~/.vimrc
 augroup END
+
+imap <TAB>
 
 " Show syntax highlighting groups for word under cursor
 nmap <C-S-P> :call <SID>SynStack()<CR>
