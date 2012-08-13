@@ -1,126 +1,136 @@
 vim_colors "Today" do
   author "Edward Loveall"
-  notes  "These colors are based off Tomorrow"
+  notes  "Based on Tomorrow for Textmate"
 
   reset      true
   background :light
 
-  foreground = "4d4d4c"
-  background = "F4F1ED"
-  selection = "d6d6d6"
-  line = "efefef"
-  comment = "8e908c"
-  red = "c82829"
-  orange = "f5871f"
-  yellow = "eab700"
-  green = "718c00"
-  aqua = "3e999f"
-  blue = "4271ae"
-  purple = "8959a8"
-  window = "efefef"
-  none = "none"
+  white       =   "fff"
+  black       =   "222"
+  foreground  =   "4d4d4c"
+  background  =   "F4F1ED"
+  selection   =   "d6d6d6"
+  line        =   "efefef"
+  comment     =   "8e908c"
+  red         =   "c82829"
+  orange      =   "f5871f"
+  yellow      =   "eab700"
+  green       =   "718c00"
+  aqua        =   "3e999f"
+  blue        =   "4271ae"
+  purple      =   "8959a8"
+  window      =   "efefef"
+  none        =   "none"
 
-  # Vim highlighting
+  # Vim
   Normal        foreground, background
-  LineNr        foreground, none, gui: 'bold'
-  NonText       selection, none
-  SpecialKey    selection, none
+  NonText       selection
+  SpecialKey    selection
   Search        foreground, yellow
   TabLine       foreground, background
   StatusLine    window, yellow
   StatusLineNC  window, foreground
   VertSplit     window, window
   Visual        none, selection
-  Directory     blue, none
-  ModeMsg       green, none
-  MoreMsg       green, none
-  Questio       green, none
-  WarningMsg    red, none            
+  Directory     blue
+  ModeMsg       green
+  MoreMsg       green
+  Question      green
+  WarningMsg    red
   MatchParen    none, selection
   Folded        comment, background
-  FoldColumn    none, background
-  vimCommand    red, none
-  
-  # Standard highlighting
-  Comment       comment, none
+  FoldColumn    background
+  LineNr        foreground
+  ErrorMsg      white, red
+  vimCommand    red
+
+  # Standard
+  Comment       comment
   Todo          comment, background
-  Title         comment, none
-  Identifier    red, none
-  Statement     foreground, none
-  Conditional   foreground, none
-  Repeat        foreground, none
-  Structure     purple, none
-  Function      blue, none
-  Constant      orange, none
-  String        green, none
-  Special       foreground, none
-  PreProc       purple, none
-  Operator      aqua, none
-  Type          yellow, none
-  Define        purple, none
-  Include       blue, none
+  Title         comment
+  Identifier    red
+  Statement     red
+  Conditional   foreground
+  Repeat        foreground
+  Structure     purple
+  Function      blue
+  Constant      orange
+  String        green
+  Special       foreground
+  PreProc       purple
+  Operator      aqua
+  Type          yellow
+  Define        purple
+  Include       blue
 
+  # White space
+  ExtraWhitespace   none, selection
+  NonText           selection
+  SpecialKey        selection
+  
   # C
-  ctype           yellow, none
-  cStorageClass   purple, none
-  cConditional    purple, none
-  cRepeat         purple, none
-
+  cType           yellow
+  cStorageClass   purple
+  cConditional    purple
+  cRepeat         purple
+  
   # PHP
-  phpVarSelector      red, none
-  phpKeyword          purple, none
-  phpRepeat           purple, none
-  phpConditional      purple, none
-  phpStatement        purple, none
-  phpMemberSelector   foreground, none 
-
+  phpVarSelector      red
+  phpKeyword          purple
+  phpRepeat           purple
+  phpConditional      purple
+  phpStatement        purple
+  phpMemberSelector   foreground
+  
   # Ruby
-  rubySymbol                  green, none
-  rubyConstant                yellow, none
-  rubyAttribute               blue, none
-  rubyInclude                 blue, none
-  rubyLocalVariableOrMethod   orange, none
-  rubyCurlyBlock              orange, none
-  rubyStringDelimiter         green, none
-  rubyInterpolationDelimiter  orange, none
-  rubyConditional             purple, none
-  rubyRepeat                  purple, none
-
+  rubySymbol                  green
+  rubyConstant                yellow
+  rubyAttribute               blue
+  rubyInclude                 blue
+  rubyLocalVariableOrMethod   orange
+  rubyCurlyBlock              orange
+  rubyStringDelimiter         green
+  rubyInterpolationDelimiter  orange
+  rubyConditional             purple
+  rubyRepeat                  purple
+  
   # Python
-  pythonInclude       purple, none
-  pythonStatement     purple, none
-  pythonConditional   purple, none
-  pythonFunction      blue, none
+  pythonInclude       purple
+  pythonStatement     purple
+  pythonConditional   purple
+  pythonFunction      blue
   
   # JavaScript
-  javaScriptBraces        foreground, none
-  javaScriptFunction      purple, none
-  javaScriptConditional   purple, none
-  javaScriptRepeat        purple, none
-  javaScriptNumber        orange, none
-  javaScriptMember        orange, none
-
+  javaScriptBraces        foreground
+  javaScriptFunction      purple
+  javaScriptConditional   purple
+  javaScriptRepeat        purple
+  javaScriptNumber        orange
+  javaScriptMember        orange
+  
   # HTML
-  htmlTag         red, none
-  htmlTagName     red, none
-  htmlArg         red, none
-  htmlScriptTag   red, none
+  htmlTag         red
+  htmlTagName     red
+  htmlArg         red
+  htmlScriptTag   red
   
   # CSS
-  cssTagName      red, none
-  cssIdentifier   green, none
-  cssColor        aqua, none
-  cssBraces       foreground, none
-  cssFontAttr     orange, none
+  cssIdentifier   green
+  cssUIAttr       orange
+  cssBraces       foreground
+  cssMedia        purple
+  cssMediaType    green
 
   # SASS
-  sassId          green, none
-  sassClass       green, none
-  sassDefinition  red, none
+  sassMixinName     blue
+  sassCssAttribute  orange
+  sassProperty      orange
 
-  link :sassId, :sassIDChar, to: :cssIdentifier
-
+  link :sassId, :sassIdChar, to: :cssIdentifier
+  
   # Diff
-  diffAdded     green, none
-  diffRemoved   red, none
+  diffAdded     green
+  diffRemoved   red
+ 
 end
+

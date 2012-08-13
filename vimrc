@@ -35,9 +35,22 @@ set softtabstop=2
 set shiftwidth=2
 set expandtab
 
+" Lines will only break on full words
+set wrap
+set linebreak
+
+" Hilight searched terms
+set hlsearch
+
 " ====== Additional Functionality ======
 
-" Automatically reloads changes to .vimrc
+" Set swap file location
+set backupdir=/tmp
+
+" Map command-1 to autocomplete
+imap <D-1> <C-S-P>
+
+" Automatically reloads changes to .vimrc when saved
 augroup myvimrchooks
     au!
     autocmd bufwritepost .vimrc source ~/.vimrc
