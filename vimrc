@@ -25,18 +25,32 @@ syntax on
 " Enable file type detection and do language-dependent indenting.
 filetype plugin indent on
 
-" Set tabs to two spaces
+" Set swap file location
+set backupdir=/tmp
 
+" ====== Look & Feel ======
+colorscheme today
+set guifont=Inconsolata:h15
+set number
+
+" Set tabs to two spaces
 set softtabstop=2
 set shiftwidth=2
 set expandtab
 
-" ====== Look & Feel ======
-colorscheme e-tomorrow
+" Lines will only break on full words
+set wrap
+set linebreak
+
+" Hilight searched terms
+set hlsearch
 
 " ====== Additional Functionality ======
 
-" Automatically reloads changes to .vimrc
+" Map tab to autocomplete
+imap <D-1> <C-S-P>
+
+" Automatically reloads changes to .vimrc when saved
 augroup myvimrchooks
     au!
     autocmd bufwritepost .vimrc source ~/.vimrc
