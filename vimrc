@@ -56,8 +56,6 @@ augroup myvimrchooks
     autocmd bufwritepost .vimrc source ~/.vimrc
 augroup END
 
-imap <TAB>
-
 " Show syntax highlighting groups for word under cursor
 nmap <C-S-P> :call <SID>SynStack()<CR>
 function! <SID>SynStack()
@@ -66,4 +64,3 @@ function! <SID>SynStack()
   endif
   echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
 endfunc
-
