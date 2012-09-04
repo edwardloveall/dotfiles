@@ -37,3 +37,7 @@
 # Use template dir for git repos
 [init]
   templatedir = ~/.git_template
+
+# Use a global ignore file
+[core]
+  excludesfile = /Users/edwardloveall/.gitignore_global
