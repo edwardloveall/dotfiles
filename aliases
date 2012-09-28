@@ -2,7 +2,7 @@
 alias rs_edward_login="ssh edward@108.166.83.125"
 alias rs_deployer_login="ssh deployer@108.166.83.125"
 alias remove_all_DS_Store_recursive="find . -name '*.DS_Store' -type f -delete"
-alias jekyll_new="$HOME/Code/Shell\ Scripts/jekyll_install.sh"
+alias jekyll_new="$HOME/Code/Shell\$ Scripts/jekyll_install.sh"
 
 # Todo
 alias todo='$EDITOR ~/.todo'
@@ -45,6 +45,7 @@ alias gpp='echo "=> Pulling changes from origin repository ..." && git pull orig
 alias gps='git push sikachu'
 alias gpu='git pull'
 alias gpuo='git pull origin'
+alias gpuom='gpuo master'
 alias gpur='git pull --rebase'
 alias gr='git rebase'
 alias gra='git rebase --abort'
