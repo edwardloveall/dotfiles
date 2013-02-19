@@ -2,7 +2,8 @@
 alias rs_edward_login="ssh edward@108.166.83.125"
 alias rs_deployer_login="ssh deployer@108.166.83.125"
 alias remove_all_DS_Store_recursive="find . -name '*.DS_Store' -type f -delete"
-alias jekyll_new="$HOME/Code/Shell\ Scripts/jekyll_install.sh"
+alias jekyll_new="$HOME/Code/Shell\$ Scripts/jekyll_install.sh"
+alias serve="ruby -rwebrick -e\"s = WEBrick::HTTPServer.new(:Port => 3000, :DocumentRoot => Dir.pwd); trap('INT') { s.shutdown }; s.start\""
 
 # Todo
 alias todo='$EDITOR ~/.todo'
@@ -37,6 +38,8 @@ alias gcow='gco work'
 alias gdep='gpo && cap deploy'
 alias gdepm='gpo && cap deploy:migrations'
 alias gfo='git fetch origin'
+alias gl='git log'
+alias gll='gl --oneline'
 alias gm='git merge'
 alias gp='git push'
 alias gpo='git push origin'
