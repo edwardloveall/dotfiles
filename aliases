@@ -1,12 +1,6 @@
-# Edward's
-alias rs_edward_login="ssh edward@108.166.83.125"
-alias rs_deployer_login="ssh deployer@108.166.83.125"
+# One-liners
 alias remove_all_DS_Store_recursive="find . -name '*.DS_Store' -type f -delete"
-alias jekyll_new="$HOME/Code/Shell\$ Scripts/jekyll_install.sh"
 alias serve="ruby -rwebrick -e\"s = WEBrick::HTTPServer.new(:Port => 3000, :DocumentRoot => Dir.pwd); trap('INT') { s.shutdown }; s.start\""
-
-# Todo
-alias todo='$EDITOR ~/.todo'
 
 # Unix
 alias tlf="tail -f"
@@ -16,10 +10,6 @@ alias ...='../..'
 alias l='ls'
 alias ll='ls -al'
 alias lh='ls -Alh'
-# alias -g G='| grep'
-# alias -g M='| less'
-# alias -g L='| wc -l'
-# alias -g ONE="| awk '{ print \$1}'"
 
 # git
 alias ga='git add'
@@ -27,14 +17,9 @@ alias gaa='git add .'
 alias gb='git branch'
 alias gba='git branch -a'
 alias gc='git commit -v'
-alias gca='git commit -a'
-alias gcam='git commit -a -m'
-alias gcf='git commit -a --amend'
-alias gcfh='git commit --amend -C HEAD'
 alias gcm='git commit -m'
 alias gco='git checkout'
 alias gcom='gco master'
-alias gcow='gco work'
 alias gdep='gpo && cap deploy'
 alias gdepm='gpo && cap deploy:migrations'
 alias gfo='git fetch origin'
@@ -44,7 +29,6 @@ alias gm='git merge'
 alias gp='git push'
 alias gpo='git push origin'
 alias gpom='gpo master'
-alias gpp='echo "=> Pulling changes from origin repository ..." && git pull origin master --rebase && echo "Pushing changes in branch master to origin repository ..." && git push origin master'
 alias gpl='git pull'
 alias gplo='git pull origin'
 alias gplom='git pull origin master'
@@ -52,51 +36,18 @@ alias gplr='git pull --rebase'
 alias gr='git rebase'
 alias gra='git rebase --abort'
 alias grc='git rebase --continue'
+alias grm='git rm'
 alias gs='git status'
 alias gss='git status -s'
-alias gsu='git submodule init; git submodule update'
 
 # Bundler
 alias b="bundle"
 alias be="bundle exec"
 alias bake="bundle exec rake"
 
-# Tests and Specs
-alias t="ruby -I test"
-alias s="bundle exec rspec"
-alias cuc="bundle exec cucumber"
-
 # Rubygems
 alias gi="gem install"
 alias giv="gem install -v"
-
-# Rails
-alias migrate="bundle exec rake db:migrate db:test:prepare"
-alias remigrate="bundle exec rake db:migrate db:migrate:redo db:schema:dump db:test:prepare"
-alias remongrate="bundle exec rake mongoid:migrate mongoid:migrate:redo"
-
-# Heroku staging
-alias staging='heroku run console --remote staging'
-alias staging-name='echo `basename $PWD`-staging'
-alias staging-process='watch heroku ps --remote staging'
-alias staging-releases='heroku releases --remote staging'
-alias staging-tail='heroku logs --tail --remote staging'
-
-# Heroku production
-alias production='heroku run console --remote production'
-alias production-name='echo `basename $PWD`-production'
-alias production-process='watch heroku ps --remote production'
-alias production-releases='heroku releases --remote production'
-alias production-tail='heroku logs --tail --remote production'
-
-# Heroku databases
-alias db-pull-staging='heroku db:pull --remote staging --confirm `staging-name`'
-alias db-pull-production='heroku db:pull --remote production --confirm `production-name`'
-alias db-copy-production-to-staging='heroku pgbackups:restore DATABASE `heroku pgbackups:url --app production-name` --app `staging-name` --confirm `staging-name`'
-alias db-backup-production='heroku pgbackups:capture --remote production'
-
-# Network
-alias whats-my-ip="curl -s checkip.dyndns.org | grep -Eo '[0-9\.]+'"
 
 # File Extensions
 alias -s markdown=mate
