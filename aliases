@@ -97,3 +97,28 @@ alias db-backup-production='heroku pgbackups:capture --remote production'
 
 # Network
 alias whats-my-ip="curl -s checkip.dyndns.org | grep -Eo '[0-9\.]+'"
+
+# File Extensions
+alias -s markdown=mate
+alias -s md=mate
+alias -s html=mate
+alias -s css=mate
+alias -s scss=mate
+alias -s sass=mate
+alias -s js=mate
+alias -s json=mate
+alias -s coffee=mate
+alias -s rb=mate
+alias -s erb=mate
+alias -s perl=mate
+alias -s py=mate
+alias -s java=mate
+alias -s php=mate
+alias -s sh=mate
+alias -s cpp=mate
+alias -s m=mate
+alias -s h=mate
+alias -s c=mate
+alias -s as=mate
+alias -s xml=mate
+alias -s csv=mate
