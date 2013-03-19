@@ -65,7 +65,6 @@ alias -s perl=mate
 alias -s py=mate
 alias -s java=mate
 alias -s php=mate
-alias -s sh=mate
 alias -s cpp=mate
 alias -s m=mate
 alias -s h=mate
