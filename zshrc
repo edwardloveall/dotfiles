@@ -102,3 +102,6 @@ if [[ "$TERM_PROGRAM" == "Apple_Terminal" ]] && [[ -z "$INSIDE_EMACS" ]]; then
     update_terminal_cwd
 fi
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+# Environment vars
+export POSTGRES_USERNAME='edwardloveall'
