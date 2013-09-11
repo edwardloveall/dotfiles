@@ -15,7 +15,7 @@ compinit
 setopt auto_cd
 
 # case insensitive completion for cd etc *N*
-zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*' 
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 
 # use vim as an editor
 export EDITOR="mate -w"
@@ -58,9 +58,6 @@ export dirstacksize=5
 setopt AUTOCD
 setopt AUTOPUSHD PUSHDMINUS PUSHDSILENT PUSHDTOHOME
 setopt cdablevars
-
-# Try to correct command line spelling
-setopt CORRECT CORRECT_ALL
 
 # Enable extended globbing
 setopt EXTENDED_GLOB
