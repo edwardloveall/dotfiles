@@ -1,0 +1,12 @@
+TM_GIT = "/usr/local/bin/git"
+
+fontName        = Inconsolata
+fontSize        = 14
+tabSize         = 2
+softTabs        = true
+showInvisibles  = true
+disableIndentCorrections = true
+theme           = A83F74A1-2117-44CB-AB55-0A61DCEDD16D
+
+[ attr.file.unknown-encoding ]
+encoding = UTF-8
