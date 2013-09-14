@@ -41,3 +41,5 @@
 # Use a global ignore file
 [core]
   excludesfile = /Users/edwardloveall/.gitignore_global
+[credential]
+  helper = osxkeychain
