@@ -1,5 +1,9 @@
-#RVM
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
+if [[ -e /usr/local/share/chruby ]]; then
+  source /usr/local/share/chruby/chruby.sh
+  source /usr/local/share/chruby/auto.sh
+fi
+
+chruby ruby-2.0
 
 # load our own completion functions
 fpath=(~/.zsh/completion $fpath)
