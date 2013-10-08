@@ -106,3 +106,6 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 # Environment vars
 export POSTGRES_USERNAME='edwardloveall'
+
+# Set window title to current directory
+precmd () {print -Pn "\e]2;%1d\a"}
