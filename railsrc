@@ -1,1 +1,1 @@
--d postgresql
+-d postgresql -m ~/.rails_template/app_template.rb
