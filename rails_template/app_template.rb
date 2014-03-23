@@ -1,11 +1,5 @@
 ruby_comment = /^(\s)*#.*\n/
 
-# Gems
-gem 'bourbon'
-gem 'neat'
-gem 'simple_form'
-gem 'quiet_assets'
-
 # Modify the database config
 gsub_file 'config/database.yml', /username\: .+/, "username: <% ENV['POSTGRES_USERNAME'] %>"
 gsub_file 'config/database.yml', ruby_comment, ''
@@ -13,20 +7,20 @@ gsub_file 'config/database.yml', ruby_comment, ''
 # Clear Routes
 gsub_file 'config/routes.rb', ruby_comment, ''
 
-# Gemfile
-gsub_file 'Gemfile', /gem 'coffee-rails'.*/, ''
-gsub_file 'Gemfile', ruby_comment, ''
+# Clear Gemfile
+remove_file 'Gemfile'
 
 # Remove Assets
 remove_file 'app/assets/javascripts/application.js'
 remove_file 'app/assets/stylesheets/application.css'
 
-# Add Custom Assets
+# Add Custom Files
 template_dir = "#{File.dirname(__FILE__)}/template"
 files = []
 
 inside template_dir do
   files = Dir.glob("**/*.*")
+  files << 'Gemfile'
 end
 
 files.each do |file|
