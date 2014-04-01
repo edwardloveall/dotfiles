@@ -21,7 +21,7 @@ setopt auto_cd
 # case insensitive completion for cd etc *N*
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 
-# use vim as an editor
+# use textmate as an editor
 export EDITOR="mate -w"
 
 # aliases
@@ -105,6 +105,7 @@ fi
 
 # Environment vars
 export POSTGRES_USERNAME='edwardloveall'
+export PGUSER=edwardloveall
 
 # Set window title to current directory
 precmd () {print -Pn "\e]2;%1d\a"}
