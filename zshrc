@@ -3,7 +3,7 @@ if [[ -e /usr/local/share/chruby ]]; then
   source /usr/local/share/chruby/auto.sh
 fi
 
-chruby 2
+chruby ruby-2
 
 # load our own completion functions
 fpath=(~/.zsh/completion $fpath)
