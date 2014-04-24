@@ -31,9 +31,6 @@ end
 # Create database
 run 'rake db:create'
 
-# Install spring
-run 'bundle exec spring binstub --all'
-
 # Git Repo
 git :init
 git add: '.'
