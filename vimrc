@@ -26,9 +26,9 @@ syntax on
 filetype plugin indent on
 
 " ====== Look & Feel ======
-colorscheme today
+colorscheme Tomorrow
 set number
-set guifont=Inconsolata:h15
+set guifont=Inconsolata:h13
 
 " Set tabs to two spaces
 set softtabstop=2
