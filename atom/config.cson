@@ -1,0 +1,26 @@
+'exception-reporting':
+  'userId': '20070093-e1f2-8fc9-d57a-5d08d2f48955'
+'release-notes':
+  'viewedVersion': '0.95.0'
+'welcome':
+  'showOnStartup': false
+'metrics':
+  'userId': '799d8b5b1c307c19f64adc4b4c481bf1d4f2790e'
+'editor':
+  'fontSize': 14
+  'fontFamily': 'Inconsolata'
+  'softWrap': true
+'core':
+  'themes': [
+    'textMate-ui'
+    'tomorrow'
+  ]
+  'disabledPackages': [
+    'metrics'
+    'background-tips'
+    'autocomplete-plus'
+    'wrap-guide'
+  ]
+'file-types':
+  'scss.erb': 'sass'
+  'css.scss.erb': 'sass'
