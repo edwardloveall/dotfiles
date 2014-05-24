@@ -22,7 +22,7 @@ setopt auto_cd
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 
 # use textmate as an editor
-export EDITOR="atom -w"
+export EDITOR="vim"
 
 # aliases
 if [ -e "$HOME/.aliases" ]; then
