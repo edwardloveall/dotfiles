@@ -12,7 +12,7 @@
   'softWrap': true
 'core':
   'themes': [
-    'textMate-ui'
+    'atom-mac-theme'
     'tomorrow'
   ]
   'disabledPackages': [
