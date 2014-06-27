@@ -28,6 +28,8 @@ files.each do |file|
   copy_file [template_dir, file].join('/'), file
 end
 
+append_to_file '.gitignore', '/coverage'
+
 # Create database
 run 'rake db:create'
 
