@@ -12,6 +12,7 @@ gem 'quiet_assets'
 gem 'rails', '4.1.0'
 gem 'sass-rails'
 gem 'simple_form'
+gem 'thin'
 gem 'turbolinks'
 gem 'uglifier'
 
