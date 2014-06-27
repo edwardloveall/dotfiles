@@ -21,6 +21,7 @@
     'autocomplete-plus'
     'wrap-guide'
   ]
+  'excludeVcsIgnoredPaths': false
 'file-types':
   'scss.erb': 'sass'
   'css.scss.erb': 'sass'
