@@ -4,6 +4,7 @@ if [[ -e /usr/local/share/chruby ]]; then
 fi
 
 chruby ruby-2
+chruby
 
 # load our own completion functions
 fpath=(~/.zsh/completion $fpath)
@@ -20,6 +21,9 @@ setopt auto_cd
 
 # case insensitive completion for cd etc *N*
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
+
+# Autocomplete ignores
+zstyle ':completion:*:*' ignored-patterns '*ORIG_HEAD'
 
 # use textmate as an editor
 export EDITOR="vim"
