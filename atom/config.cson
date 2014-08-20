@@ -20,8 +20,12 @@
     'background-tips'
     'autocomplete-plus'
     'wrap-guide'
+    'close-after-last-tab'
   ]
   'excludeVcsIgnoredPaths': false
 'file-types':
   'scss.erb': 'sass'
   'css.scss.erb': 'sass'
+'the-closer':
+  'closeWindowTogetherWithLastTab': false
+'tree-view': {}
