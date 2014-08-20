@@ -4,7 +4,6 @@ if [[ -e /usr/local/share/chruby ]]; then
 fi
 
 chruby ruby-2
-chruby
 
 # load our own completion functions
 fpath=(~/.zsh/completion $fpath)
