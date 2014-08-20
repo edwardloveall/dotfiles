@@ -13,7 +13,27 @@
 }
 
 .editor {
+  background-color: #fff;
 
+  &.is-focused {
+    .gutter {
+      background-color: transparent;
+
+      .line-number.cursor-line-no-selection {
+        background-color: #f7f7f7;
+      }
+    }
+
+    .line.cursor-line {
+      background-color: #f7f7f7;
+    }
+
+    .selection {
+      .region {
+        background-color: #f0f0f0;
+      }
+    }
+  }
 }
 
 .editor .cursor {
