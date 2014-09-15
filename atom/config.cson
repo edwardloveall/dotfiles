@@ -30,4 +30,8 @@
   'closeWindowTogetherWithLastTab': false
 'tree-view': {}
 'linter-rubocop':
-  'rubocopExecutablePath': '/Users/edwardloveall/.gem/ruby/2.0.0/bin/'
+  'rubocopExecutablePath': '/Users/edwardloveall/.gem/ruby/2.1.2/bin/'
+'linter-ruby':
+  'rubyExecutablePath': '/Users/edwardloveall/.gem/ruby/2.1.2/bin/'
+'linter':
+  'lintOnChange': false

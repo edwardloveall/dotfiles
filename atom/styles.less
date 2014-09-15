@@ -47,3 +47,15 @@
 .tab-bar .tab.modified .close-icon {
   display: block;
 }
+
+.highlight {
+  &.linter-warning .region {
+    background: fade(#daa520, 30%);
+    border: none;
+  }
+
+  &.linter-error .region {
+    background: fade(#b22222, 30%);
+    border: none;
+  }
+}
