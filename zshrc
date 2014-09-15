@@ -112,3 +112,5 @@ export PGUSER=edwardloveall
 
 # Set window title to current directory
 precmd () {print -Pn "\e]2;%1d\a"}
+
+export PKG_CONFIG_PATH="/opt/local/lib/pkgconfig:$PKG_CONFIG_PATH"
