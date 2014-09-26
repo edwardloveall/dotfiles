@@ -51,6 +51,7 @@ alias giv="gem install -v"
 
 # Rails
 alias migrate="rake db:migrate db:rollback && rake db:migrate"
+alias reset_test_db="rake db:drop db:create db:schema:load RAILS_ENV=test"
 
 # File Extensions
 alias -s markdown=mate
