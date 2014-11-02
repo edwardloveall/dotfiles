@@ -16,3 +16,6 @@
 #   'ctrl-P': 'core:move-up'
 #   'ctrl-p': 'core:move-down'
 #
+
+'key-binding-resolver':
+  'ctrl-cmd-.': 'toggle'

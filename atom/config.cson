@@ -1,37 +1,35 @@
-'exception-reporting':
-  'userId': '20070093-e1f2-8fc9-d57a-5d08d2f48955'
-'release-notes':
-  'viewedVersion': '0.95.0'
-'welcome':
-  'showOnStartup': false
-'metrics':
-  'userId': '799d8b5b1c307c19f64adc4b4c481bf1d4f2790e'
-'editor':
-  'fontFamily': 'Inconsolata'
-  'softWrap': true
-  'fontSize': 14
-'core':
-  'themes': [
-    'white-ui'
-    'tomorrow'
-  ]
-  'disabledPackages': [
-    'metrics'
-    'background-tips'
-    'autocomplete-plus'
-    'wrap-guide'
-    'close-after-last-tab'
-  ]
-  'excludeVcsIgnoredPaths': false
-'file-types':
-  'scss.erb': 'sass'
-  'css.scss.erb': 'sass'
-'the-closer':
-  'closeWindowTogetherWithLastTab': false
-'tree-view': {}
-'linter-rubocop':
-  'rubocopExecutablePath': '/Users/edwardloveall/.gem/ruby/2.1.2/bin/'
-'linter-ruby':
-  'rubyExecutablePath': '/Users/edwardloveall/.gem/ruby/2.1.2/bin/'
-'linter':
-  'lintOnChange': false
+'global':
+  'exception-reporting':
+    'userId': '20070093-e1f2-8fc9-d57a-5d08d2f48955'
+  'release-notes':
+    'viewedVersion': '0.95.0'
+  'welcome':
+    'showOnStartup': false
+  'metrics':
+    'userId': '799d8b5b1c307c19f64adc4b4c481bf1d4f2790e'
+  'editor':
+    'fontFamily': 'Inconsolata'
+    'softWrap': true
+    'fontSize': 14
+    'invisibles': {}
+  'core':
+    'themes': [
+      'white-ui'
+      'tomorrow'
+    ]
+    'disabledPackages': [
+      'metrics'
+      'background-tips'
+      'autocomplete-plus'
+      'wrap-guide'
+      'close-after-last-tab'
+    ]
+  'the-closer':
+    'closeWindowTogetherWithLastTab': false
+  'linter-rubocop':
+    'rubocopExecutablePath': '/Users/edwardloveall/.gem/ruby/2.1.2/bin/'
+  'linter-ruby':
+    'rubyExecutablePath': '/Users/edwardloveall/.gem/ruby/2.1.2/bin/'
+  'linter':
+    'lintOnChange': false
+    'lintDebug': true
