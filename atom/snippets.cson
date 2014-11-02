@@ -13,3 +13,17 @@
 #     'prefix': 'log'
 #     'body': 'console.log $1'
 #
+
+'.text.html':
+  'Div':
+    'prefix': 'div'
+    'body': '<div${1: class=\"${2:name}\"}>\n\t$3\n</div>'
+  'Article':
+    'prefix': 'article'
+    'body': '<article class=\"$1\">\n\t$2\n</article>'
+  'Form':
+    'prefix': 'form'
+    'body': '<form class=\"${1:form_class}\" action=\"${2:index.html}\" method=\"${3:post}\">\n\t$4\n</form>'
+  'Section':
+    'prefix': 'section'
+    'body': '<section class=\"${1:name}\">\n\t$2\n</section>'
