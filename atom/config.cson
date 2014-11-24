@@ -9,8 +9,8 @@
     'userId': '799d8b5b1c307c19f64adc4b4c481bf1d4f2790e'
   'editor':
     'fontFamily': 'Inconsolata'
-    'softWrap': true
     'fontSize': 14
+    'softWrapAtPreferredLineLength': true
     'invisibles': {}
   'core':
     'themes': [
@@ -33,3 +33,6 @@
   'linter':
     'lintOnChange': false
     'lintDebug': true
+'.diff.source':
+  'editor':
+    'preferredLineLength': 80

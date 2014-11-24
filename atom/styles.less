@@ -12,7 +12,7 @@
 
 }
 
-.editor {
+atom-text-editor.editor {
   background-color: #fff;
 
   &.is-focused {
@@ -37,6 +37,20 @@
 
   span.comment {
     color: #c0c0c0;
+  }
+
+  .source.diff {
+
+
+    .markup.deleted.diff {
+      background-color: transparent;
+      color: #DE2316;
+    }
+
+    .markup.inserted.diff {
+      background-color: transparent;
+      color: #729443;
+    }
   }
 }
 
