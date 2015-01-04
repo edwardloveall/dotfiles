@@ -10,8 +10,7 @@
   'editor':
     'fontFamily': 'Inconsolata'
     'fontSize': 14
-    'softWrapAtPreferredLineLength': true
-    'invisibles': {}
+    'softWrap': true
   'core':
     'themes': [
       'white-ui'
@@ -20,16 +19,16 @@
     'disabledPackages': [
       'metrics'
       'background-tips'
-      'autocomplete-plus'
       'wrap-guide'
-      'close-after-last-tab'
     ]
   'the-closer':
     'closeWindowTogetherWithLastTab': false
   'linter-rubocop':
-    'rubocopExecutablePath': '/Users/edwardloveall/.gem/ruby/2.1.2/bin/'
+    'rubocopExecutablePath': '/Users/edwardloveall/.gem/ruby/2.1.5/bin/'
   'linter-ruby':
     'rubyExecutablePath': '/Users/edwardloveall/.gem/ruby/2.1.2/bin/'
+  'linter-scss-lint':
+    'scssLintExecutablePath': '/Users/edwardloveall/.gem/ruby/2.1.5/bin/scss-lint'
   'linter':
     'lintOnChange': false
     'lintDebug': true
