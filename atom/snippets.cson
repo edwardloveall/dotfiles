@@ -27,3 +27,6 @@
   'Section':
     'prefix': 'section'
     'body': '<section class=\"${1:name}\">\n\t$2\n</section>'
+  'Paragraph':
+    'prefix': 'p'
+    'body': '<p>${1}</p>${2}'
