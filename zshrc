@@ -9,7 +9,7 @@ chruby ruby-2
 fpath=(~/.zsh/completion $fpath)
 
 # path
-export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/bin/psql:$HOME/.burrow/bin:$PATH"
+export PATH="$HOME/.bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin/psql:$HOME/.burrow/bin:$PATH"
 
 # completion
 autoload -U compinit
