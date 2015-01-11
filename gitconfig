@@ -42,7 +42,12 @@
 [core]
   editor = atom --wait
   excludesfile = /Users/edwardloveall/.gitignore_global
+
 [credential]
   helper = osxkeychain
+
 [merge]
   ff = only
+
+[commit]
+  template = ~/.gitmessage
