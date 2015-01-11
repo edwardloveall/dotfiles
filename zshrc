@@ -48,11 +48,11 @@ bindkey -s "^T" "^[Isudo ^[A" # "t" for "toughguy"
 # expand functions in the prompt
 setopt prompt_subst
 
-# ignore duplicate history entries
-setopt histignoredups
-
-# keep TONS of history
-export HISTSIZE=4096
+# history settings
+setopt hist_ignore_all_dups inc_append_history
+HISTFILE=~/.zhistory
+HISTSIZE=4096
+SAVEHIST=4096
 
 # automatically pushd
 setopt auto_pushd
