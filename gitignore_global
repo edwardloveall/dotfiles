@@ -24,3 +24,6 @@ Thumbs.db
 # Development generated files
 .sass-cache
 *.swp
+
+# Configuration
+.env
