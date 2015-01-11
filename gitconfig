@@ -44,3 +44,5 @@
   excludesfile = /Users/edwardloveall/.gitignore_global
 [credential]
   helper = osxkeychain
+[merge]
+  ff = only
