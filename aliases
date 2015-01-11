@@ -36,6 +36,7 @@ alias grc='git rebase --continue'
 alias grm='git rm'
 alias gs='git status'
 alias gss='git status -s'
+alias gcne='git commit --amend --no-edit'
 
 # Bundler
 alias b="bundle"
