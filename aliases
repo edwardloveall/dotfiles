@@ -11,6 +11,9 @@ alias l='ls'
 alias ll='ls -al'
 alias lh='ls -Alh'
 
+# Pretty print the path
+alias path="echo $PATH | tr -s ':' '\n'"
+
 # git
 alias ga='git add'
 alias gaa='git add .'
