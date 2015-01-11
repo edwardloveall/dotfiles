@@ -1,4 +1,4 @@
-'global':
+'*':
   'exception-reporting':
     'userId': '20070093-e1f2-8fc9-d57a-5d08d2f48955'
   'release-notes':
@@ -11,15 +11,16 @@
     'fontFamily': 'Inconsolata'
     'fontSize': 14
     'softWrap': true
+    'invisibles': {}
   'core':
-    'themes': [
-      'white-ui'
-      'tomorrow'
-    ]
     'disabledPackages': [
       'metrics'
       'background-tips'
       'wrap-guide'
+    ]
+    'themes': [
+      'white-ui'
+      'tomorrow'
     ]
   'the-closer':
     'closeWindowTogetherWithLastTab': false
@@ -32,6 +33,3 @@
   'linter':
     'lintOnChange': false
     'lintDebug': true
-'.diff.source':
-  'editor':
-    'preferredLineLength': 80
