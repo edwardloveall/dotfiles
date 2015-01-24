@@ -1,35 +1,54 @@
-'*':
-  'exception-reporting':
-    'userId': '20070093-e1f2-8fc9-d57a-5d08d2f48955'
-  'release-notes':
-    'viewedVersion': '0.95.0'
-  'welcome':
-    'showOnStartup': false
-  'metrics':
-    'userId': '799d8b5b1c307c19f64adc4b4c481bf1d4f2790e'
-  'editor':
-    'fontFamily': 'Inconsolata'
-    'fontSize': 14
-    'softWrap': true
-    'invisibles': {}
-  'core':
-    'disabledPackages': [
-      'metrics'
-      'background-tips'
-      'wrap-guide'
+"*":
+  "*":
+    "exception-reporting":
+      userId: "20070093-e1f2-8fc9-d57a-5d08d2f48955"
+    "release-notes":
+      viewedVersion: "0.95.0"
+    welcome:
+      showOnStartup: false
+    metrics:
+      userId: "799d8b5b1c307c19f64adc4b4c481bf1d4f2790e"
+    editor:
+      fontFamily: "Inconsolata"
+      fontSize: 14
+      softWrap: true
+      softWrapAtPreferredLineLength: true
+    core:
+      disabledPackages: [
+        "metrics"
+        "background-tips"
+        "wrap-guide"
+      ]
+      themes: [
+        "white-ui-new"
+        "tomorrow"
+      ]
+    "the-closer":
+      closeWindowTogetherWithLastTab: false
+    "linter-rubocop":
+      rubocopExecutablePath: "/Users/edwardloveall/.gem/ruby/2.1.5/bin/"
+    "linter-ruby":
+      rubyExecutablePath: "/Users/edwardloveall/.gem/ruby/2.1.5/bin/"
+    "linter-scss-lint":
+      scssLintExecutablePath: "/Users/edwardloveall/.gem/ruby/2.1.5/bin/scss-lint"
+    linter:
+      lintOnChange: false
+      lintDebug: true
+  linter:
+    lintOnChange: false
+  "exception-reporting":
+    userId: "51495110-3dba-1014-b4ca-8b05424da0f0"
+  welcome:
+    showOnStartup: false
+  core:
+    disabledPackages: [
+      "deprecation-cop"
     ]
-    'themes': [
-      'white-ui'
-      'tomorrow'
+    themes: [
+      "white-ui"
+      "tomorrow"
     ]
-  'the-closer':
-    'closeWindowTogetherWithLastTab': false
-  'linter-rubocop':
-    'rubocopExecutablePath': '/Users/edwardloveall/.gem/ruby/2.1.5/bin/'
-  'linter-ruby':
-    'rubyExecutablePath': '/Users/edwardloveall/.gem/ruby/2.1.2/bin/'
-  'linter-scss-lint':
-    'scssLintExecutablePath': '/Users/edwardloveall/.gem/ruby/2.1.5/bin/scss-lint'
-  'linter':
-    'lintOnChange': false
-    'lintDebug': true
+  editor:
+    invisibles: {}
+  "tree-view":
+    hideVcsIgnoredFiles: true
