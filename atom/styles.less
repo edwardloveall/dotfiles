@@ -9,67 +9,13 @@
  */
 
 .tree-view {
-
+  background-color: white;
 }
 
 atom-text-editor {
   background-color: #fff;
-
-  &.is-focused {
-    .gutter {
-      background-color: transparent;
-
-      .line-number.cursor-line-no-selection {
-        background-color: #f7f7f7;
-      }
-    }
-
-    .line.cursor-line {
-      background-color: #f7f7f7;
-    }
-
-    .selection {
-      .region {
-        background-color: #f0f0f0;
-      }
-    }
-  }
-
-  span.comment {
-    color: #c0c0c0;
-  }
-
-  .source.diff {
-
-
-    .markup.deleted.diff {
-      background-color: transparent;
-      color: #DE2316;
-    }
-
-    .markup.inserted.diff {
-      background-color: transparent;
-      color: #729443;
-    }
-  }
 }
 
 .editor .cursor {
 
-}
-
-.tab-bar .tab.modified .close-icon {
-  display: block;
-}
-
-.highlight {
-  &.linter-warning .region {
-    background: fade(#daa520, 30%);
-    border: none;
-  }
-
-  &.linter-error .region {
-    background: fade(#b22222, 30%);
-    border: none;
-  }
 }
