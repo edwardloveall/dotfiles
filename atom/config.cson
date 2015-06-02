@@ -32,3 +32,5 @@
     executablePath: "/Users/edwardloveall/.gem/ruby/2.2.0/bin/scss-lint"
   "autocomplete-plus":
     confirmCompletion: "enter"
+  "the-closer":
+    closeWindowTogetherWithLastTab: false
