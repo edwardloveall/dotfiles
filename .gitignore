@@ -2,4 +2,5 @@
 /atom/storage
 /atom/.node-gyp
 /atom/.apm/*/
+/atom/packages
 .DS_Store
