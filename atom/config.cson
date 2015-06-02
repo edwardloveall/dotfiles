@@ -12,7 +12,7 @@
   core:
     themes: [
       "one-light-ui"
-      "atom-dark-syntax"
+      "tomorrow"
     ]
     disabledPackages: [
       "metrics"
