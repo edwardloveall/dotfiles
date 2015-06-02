@@ -1,45 +1,34 @@
 "*":
+  editor:
+    invisibles:
+      {}
+    softWrap: true
+  linter:
+    {}
   "exception-reporting":
-    userId: "20070093-e1f2-8fc9-d57a-5d08d2f48955"
-  "release-notes":
-    viewedVersion: "0.95.0"
+    userId: "05769e4a-414c-0234-3c4f-848d932dafcd"
   welcome:
     showOnStartup: false
-  metrics:
-    userId: "799d8b5b1c307c19f64adc4b4c481bf1d4f2790e"
-  editor:
-    fontFamily: "Inconsolata"
-    softWrap: true
-    invisibles: {}
   core:
-    disabledPackages: [
-      "metrics"
-      "background-tips"
-      "wrap-guide"
-      "inline-autocomplete"
-    ]
     themes: [
       "one-light-ui"
       "tomorrow"
     ]
-  "the-closer":
-    closeWindowTogetherWithLastTab: false
+    disabledPackages: [
+      "metrics"
+      "background-tips"
+      "archive-view"
+      "autocomplete-snippets"
+      "bookmarks"
+      "keybinding-resolver"
+      "language-toml"
+      "wrap-guide"
+    ]
   "linter-rubocop":
-    rubocopExecutablePath: "/Users/edwardloveall/.gem/ruby/2.2.0/bin/"
-  "linter-ruby":
-    rubyExecutablePath: "/Users/edwardloveall/.rubies/ruby-2.2.0/bin/"
+    executablePath: "/Users/edwardloveall/.gem/ruby/2.2.0/bin"
+  "one-light-ui":
+    {}
   "linter-scss-lint":
-    scssLintExecutablePath: "/usr/bin/scss-lint"
-  linter:
-    lintOnChange: false
-    lintDebug: true
-  "file-icons": {}
-  "linter-jshint":
-    jshintExecutablePath: "/usr/local/bin/"
+    executablePath: "/Users/edwardloveall/.gem/ruby/2.2.0/bin/scss-lint"
   "autocomplete-plus":
     confirmCompletion: "enter"
-    fileBlacklist: [
-      "COMMIT_EDITMSG"
-      "Gemfile"
-    ]
-  "related-files": {}
