@@ -1,8 +1,8 @@
 "*":
   editor:
-    invisibles:
-      {}
+    invisibles: {}
     softWrap: true
+    fontSize: 17
   linter:
     lintOnChange: false
     ignoredLinterErrors: [
@@ -29,11 +29,16 @@
     ]
   "linter-rubocop":
     executablePath: "/Users/edwardloveall/.gem/ruby/2.2.0/bin"
-  "one-light-ui":
-    {}
+  "one-light-ui": {}
   "linter-scss-lint":
     executablePath: "/Users/edwardloveall/.gem/ruby/2.2.0/bin/scss-lint"
   "autocomplete-plus":
     confirmCompletion: "enter"
   "the-closer":
     closeWindowTogetherWithLastTab: false
+  "tree-view":
+    hideVcsIgnoredFiles: true
+  "color-picker":
+    uppercaseColorValues: true
+    preferredFormat: "HEX"
+    randomColor: false
