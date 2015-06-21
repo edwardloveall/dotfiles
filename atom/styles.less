@@ -12,10 +12,10 @@
   background-color: white;
 }
 
-atom-text-editor.editor {
-  background-color: #fff;
-}
+atom-text-editor {
+  background-color: #fff !important;
 
-.editor .cursor {
-
+  &::shadow .line-numbers {
+    background-color: rgb(240, 240, 240) !important;
+  }
 }
