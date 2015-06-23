@@ -2,7 +2,8 @@
   editor:
     invisibles: {}
     softWrap: true
-    fontSize: 17
+    fontFamily: "Inconsolata"
+    fontSize: 16
   linter:
     lintOnChange: false
     ignoredLinterErrors: [
