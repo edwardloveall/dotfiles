@@ -77,3 +77,7 @@ alias -s c=mate
 alias -s as=mate
 alias -s xml=mate
 alias -s csv=mate
+
+# centos
+
+alias yi='sudo yum -y install'
