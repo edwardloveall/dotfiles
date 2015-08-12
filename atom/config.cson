@@ -27,6 +27,7 @@
       "keybinding-resolver"
       "language-toml"
       "wrap-guide"
+      "linter-rubocop"
     ]
   "linter-rubocop":
     executablePath: "/Users/edwardloveall/.gem/ruby/2.2.0/bin"
