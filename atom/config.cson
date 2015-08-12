@@ -30,6 +30,7 @@
       "deprecation-cop"
       "linter-rubocop"
     ]
+    audioBeep: false
   "linter-rubocop":
     executablePath: "/Users/edwardloveall/.gem/ruby/2.2.0/bin"
   "one-light-ui": {}
