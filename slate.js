@@ -5,7 +5,8 @@ var key = function(key) {
 
 // Variables
 var laptop = '1440x900',
-		sizePrimary = { 'direction': 'top-left', 'width': 'screenSizeX*.8', 'height': 'screenSizeY' },
+		sizePrimary = { 'direction': 'top-left', 'width': 'screenSizeX*.9', 'height': 'screenSizeY' },
+		sizeLaptopPrimary = { 'direction': 'top-left', 'width': 'screenSizeX*.8', 'height': 'screenSizeY' },
 		sizeSocialFeed = { 'direction': 'top-left', 'width': 'screenSizeX*.2', 'height': 'screenSizeY' },
     sizeLeft = { 'direction': 'top-left', 'width': 'screenSizeX/2', 'height': 'screenSizeY' },
     sizeRight = { 'direction': 'top-right', 'width': 'screenSizeX/2', 'height': 'screenSizeY' },
@@ -23,7 +24,7 @@ var mainScreenPrimary = mainBase.dup(sizePrimary),
  		mainScreenRight = mainBase.dup(sizeRight),
  		mainScreenSocial = mainBase.dup(sizeSocialFeed),
  		laptopScreenSocial = mainScreenSocial.dup(screenLaptop),
- 		laptopScreenPrimary = laptopBase.dup(sizePrimary),
+ 		laptopScreenPrimary = laptopBase.dup(sizeLaptopPrimary),
 		adiumContactScreen = laptopBase.dup(sizeContactList);
 
 var adium = function(win) {
