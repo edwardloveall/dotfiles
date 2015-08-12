@@ -27,6 +27,7 @@
       "keybinding-resolver"
       "language-toml"
       "wrap-guide"
+      "deprecation-cop"
       "linter-rubocop"
     ]
   "linter-rubocop":
