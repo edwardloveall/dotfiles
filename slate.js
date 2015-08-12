@@ -15,7 +15,7 @@ var laptop = '1440x900',
 
 // Operations
 var mainBase = slate.operation('corner', {
-	'screen': '1', direction: 'top-left'
+	'screen': '0', direction: 'top-left'
 });
 var laptopBase = mainBase.dup(screenLaptop);
 
@@ -98,3 +98,8 @@ slate.bind(key('return'), function(window) {
 });
 
 slate.bind(key('r'), slate.operation('relaunch'));
+
+// Global Config
+slate.configAll({
+  "orderScreensLeftToRight": false
+});
