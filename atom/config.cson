@@ -31,11 +31,10 @@
       "language-toml"
       "wrap-guide"
       "deprecation-cop"
-      "linter-rubocop"
     ]
     audioBeep: false
   "linter-rubocop":
-    executablePath: "/Users/edwardloveall/.gem/ruby/2.2.0/bin"
+    executablePath: "/Users/edwardloveall/.gem/ruby/2.2.0/bin/rubocop"
   "one-light-ui": {}
   "linter-scss-lint":
     executablePath: "/Users/edwardloveall/.gem/ruby/2.2.0/bin/scss-lint"
