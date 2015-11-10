@@ -10,6 +10,10 @@
       "rubocop"
     ]
     showErrorPanel: false
+    statusIconScope: "File"
+    lintOnFly: false
+    gutterPosition: "Left"
+    gutterEnabled: false
     showErrorTabFile: false
     showErrorTabProject: false
   "exception-reporting":
@@ -34,10 +38,8 @@
     ]
     audioBeep: false
   "linter-rubocop":
-    executablePath: "/Users/edwardloveall/.gem/ruby/2.2.0/bin/rubocop"
+    command: "/Users/edwardloveall/.gem/ruby/latest/bin/rubocop"
   "one-light-ui": {}
-  "linter-scss-lint":
-    executablePath: "/Users/edwardloveall/.gem/ruby/2.2.0/bin/scss-lint"
   "autocomplete-plus":
     confirmCompletion: "enter"
   "the-closer":
@@ -48,3 +50,5 @@
     uppercaseColorValues: true
     preferredFormat: "HEX"
     randomColor: false
+  "linter-scss-lint":
+    executablePath: "/usr/local/bin/scss-lint"
