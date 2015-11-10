@@ -19,3 +19,5 @@
 
 'key-binding-resolver':
   'ctrl-cmd-.': 'toggle'
+'.platform-darwin':
+  'cmd-"': 'tree-view:reveal-active-file'
