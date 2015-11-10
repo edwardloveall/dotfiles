@@ -8,14 +8,12 @@
  * http://www.lesscss.org
  */
 
-.tree-view {
-  background-color: white;
-}
-
 atom-text-editor {
   background-color: #fff !important;
 
   &::shadow .line-numbers {
-    background-color: rgb(240, 240, 240) !important;
+    .line-number.cursor-line {
+      background: rgb(248, 248, 248);
+    }
   }
 }
