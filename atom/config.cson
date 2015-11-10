@@ -46,8 +46,7 @@
     confirmCompletion: "enter"
   "the-closer":
     closeWindowTogetherWithLastTab: false
-  "tree-view":
-    hideVcsIgnoredFiles: true
+  "tree-view": {}
   "color-picker":
     uppercaseColorValues: true
     preferredFormat: "HEX"
