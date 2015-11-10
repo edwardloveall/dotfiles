@@ -36,6 +36,7 @@
       "language-toml"
       "wrap-guide"
       "deprecation-cop"
+      "autocomplete-atom-api"
     ]
     audioBeep: false
   "linter-rubocop":
