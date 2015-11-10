@@ -3,6 +3,7 @@
     invisibles: {}
     softWrap: true
     fontFamily: "Inconsolata"
+    scrollPastEnd: true
     fontSize: 16
   linter:
     lintOnChange: false
