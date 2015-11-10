@@ -4,3 +4,4 @@
 /atom/.apm/*/
 /atom/packages
 .DS_Store
+.netrwhist
