@@ -114,6 +114,3 @@ precmd () {print -Pn "\e]2;%1d\a"}
 source ~/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 export PKG_CONFIG_PATH="/opt/local/lib/pkgconfig:$PKG_CONFIG_PATH"
-
-# Autojump
-[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
