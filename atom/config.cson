@@ -37,6 +37,7 @@
       "wrap-guide"
       "deprecation-cop"
       "autocomplete-atom-api"
+      "linter-scss-lint"
     ]
     audioBeep: false
   "linter-rubocop":

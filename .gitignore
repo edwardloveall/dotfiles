@@ -3,5 +3,6 @@
 /atom/.node-gyp
 /atom/.apm/*/
 /atom/packages
+/atom/blob-store
 .DS_Store
 .netrwhist

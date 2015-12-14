@@ -21,3 +21,6 @@
   'ctrl-cmd-.': 'toggle'
 '.platform-darwin':
   'cmd-"': 'tree-view:reveal-active-file'
+'atom-text-editor:not([mini])':
+  'alt-cmd-down': 'sort-lines:sort'
+  'alt-cmd-up': 'sort-lines:reverse-sort'
