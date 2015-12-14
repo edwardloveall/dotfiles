@@ -106,6 +106,8 @@ fi
 # Environment vars
 export POSTGRES_USERNAME='edwardloveall'
 export PGUSER=edwardloveall
+export ATOM_PATH='/Users/edwardloveall/Applications/'
+
 
 # Set window title to current directory
 precmd () {print -Pn "\e]2;%1d\a"}

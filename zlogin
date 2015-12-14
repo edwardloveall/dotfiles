@@ -18,6 +18,3 @@ setopt prompt_subst
 
 # prompt
 export PS1='$(git_prompt_info)[${SSH_CONNECTION+"%{$fg_bold[green]%}%n@%m:"}%{$fg_bold[blue]%}%1d%{$reset_color%}] '
-
-# atom location
-export ATOM_PATH='/Users/edwardloveall/Applications/'
