@@ -45,7 +45,7 @@
 # Use a global ignore file
 [core]
   editor = atom --wait
-  excludesfile = /Users/edwardloveall/.gitignore_global
+	excludesfile = /Users/edwardloveall/.gitignore_global
 
 [credential]
   helper = osxkeychain
@@ -70,3 +70,9 @@
 	required = true
 [remote "origin"]
 	push = HEAD
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Users/edwardloveall/Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
