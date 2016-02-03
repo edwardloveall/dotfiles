@@ -44,7 +44,7 @@
 
 # Use a global ignore file
 [core]
-  editor = edit --wait
+  editor = edit --wait --new-window
 	excludesfile = /Users/edwardloveall/.gitignore_global
 
 [credential]
