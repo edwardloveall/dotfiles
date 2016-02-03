@@ -1,31 +1,12 @@
 "*":
-  editor:
-    invisibles: {}
-    softWrap: true
-    fontFamily: "Inconsolata"
-    scrollPastEnd: true
-    fontSize: 16
-  linter:
-    lintOnChange: false
-    ignoredLinterErrors: [
-      "rubocop"
-    ]
-    showErrorPanel: false
-    statusIconScope: "File"
-    lintOnFly: false
-    gutterPosition: "Left"
-    gutterEnabled: false
-    showErrorTabFile: false
-    showErrorTabProject: false
-  "exception-reporting":
-    userId: "05769e4a-414c-0234-3c4f-848d932dafcd"
-  welcome:
-    showOnStartup: false
+  "autocomplete-plus":
+    confirmCompletion: "enter"
+  "color-picker":
+    preferredFormat: "HEX"
+    randomColor: false
+    uppercaseColorValues: true
   core:
-    themes: [
-      "one-light-ui"
-      "tomorrow"
-    ]
+    audioBeep: false
     disabledPackages: [
       "metrics"
       "background-tips"
@@ -39,18 +20,38 @@
       "autocomplete-atom-api"
       "linter-scss-lint"
     ]
-    audioBeep: false
+    themes: [
+      "one-light-ui"
+      "tomorrow"
+    ]
+  editor:
+    fontFamily: "Inconsolata"
+    fontSize: 19
+    invisibles: {}
+    scrollPastEnd: true
+    softWrap: true
+  "exception-reporting":
+    userId: "05769e4a-414c-0234-3c4f-848d932dafcd"
+  linter:
+    gutterEnabled: false
+    gutterPosition: "Left"
+    ignoredLinterErrors: [
+      "rubocop"
+    ]
+    lintOnChange: false
+    lintOnFly: false
+    showErrorPanel: false
+    showErrorTabFile: false
+    showErrorTabProject: false
+    statusIconScope: "File"
   "linter-rubocop":
     command: "/Users/edwardloveall/.gem/ruby/latest/bin/rubocop"
-  "one-light-ui": {}
-  "autocomplete-plus":
-    confirmCompletion: "enter"
-  "the-closer":
-    closeWindowTogetherWithLastTab: false
-  "tree-view": {}
-  "color-picker":
-    uppercaseColorValues: true
-    preferredFormat: "HEX"
-    randomColor: false
   "linter-scss-lint":
     executablePath: "/usr/local/bin/scss-lint"
+  "one-light-ui": {}
+  "the-closer":
+    closeWindowTogetherWithLastTab: false
+  "tree-view":
+    hideVcsIgnoredFiles: true
+  welcome:
+    showOnStartup: false
