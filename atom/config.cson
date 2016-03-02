@@ -51,7 +51,6 @@
   "one-light-ui": {}
   "the-closer":
     closeWindowTogetherWithLastTab: false
-  "tree-view":
-    hideVcsIgnoredFiles: true
+  "tree-view": {}
   welcome:
     showOnStartup: false
