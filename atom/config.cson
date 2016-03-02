@@ -21,6 +21,7 @@
       "linter-scss-lint"
       "linter-jshint"
     ]
+    openEmptyEditorOnStart: false
     themes: [
       "one-light-ui"
       "tomorrow"
