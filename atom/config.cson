@@ -19,6 +19,7 @@
       "deprecation-cop"
       "autocomplete-atom-api"
       "linter-scss-lint"
+      "linter-jshint"
     ]
     themes: [
       "one-light-ui"
@@ -44,6 +45,8 @@
     showErrorTabFile: false
     showErrorTabProject: false
     statusIconScope: "File"
+  "linter-jshint":
+    executablePath: "/usr/local/bin/jslint"
   "linter-rubocop":
     command: "/Users/edwardloveall/.gem/ruby/latest/bin/rubocop"
   "linter-scss-lint":
