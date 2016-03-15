@@ -7,13 +7,28 @@
  * http://www.lesscss.org
  */
 
+@gutter-bg: #e6e6e6;
+@current-line-bg: lighten(@gutter-bg, 4);
+
 atom-text-editor {
   background-color: #fff !important;
+  line-height: 1.3em;
   padding-right: 1ex;
 
-  &::shadow .line-numbers {
-    .line-number.cursor-line {
-      background: rgb(240, 240, 240);
+  &::shadow {
+    .gutter {
+      background-color: @gutter-bg;
+      border-right: 1px solid darken(@gutter-bg, 10);
+      font-size: 0.9em;
+      padding-top: 0.5em;
+
+      .line-number.cursor-line {
+        background: @current-line-bg;
+      }
+    }
+
+    :not(.mini) .scroll-view {
+      padding: 0.5em;
     }
   }
 }
