@@ -8,6 +8,7 @@
   core:
     allowPendingPaneItems: false
     audioBeep: false
+    automaticallyUpdate: false
     disabledPackages: [
       "metrics"
       "background-tips"
