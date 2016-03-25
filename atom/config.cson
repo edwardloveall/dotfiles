@@ -31,6 +31,7 @@
     invisibles: {}
     scrollPastEnd: true
     softWrap: true
+    softWrapAtPreferredLineLength: true
   "exception-reporting":
     userId: "05769e4a-414c-0234-3c4f-848d932dafcd"
   linter:
