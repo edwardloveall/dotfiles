@@ -22,13 +22,25 @@ atom-text-editor {
       font-size: 0.9em;
       padding-top: 0.5em;
 
-      .line-number.cursor-line {
+      .cursor-line {
         background: @current-line-bg;
       }
     }
 
-    :not(.mini) .scroll-view {
+    .scroll-view {
       padding: 0.5em;
     }
+  }
+}
+
+atom-text-editor.mini::shadow {
+  .scroll-view {
+    padding: 0;
+  }
+}
+
+.tab-bar {
+  .tab.active[data-type$="Editor"]::after {
+    border-bottom-color: #d6d6d6;
   }
 }
