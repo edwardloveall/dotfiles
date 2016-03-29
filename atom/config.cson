@@ -31,7 +31,7 @@
     ]
   editor:
     fontFamily: "Inconsolata"
-    fontSize: 18
+    fontSize: 17
     invisibles: {}
     scrollPastEnd: true
     softWrap: true
