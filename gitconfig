@@ -7,6 +7,7 @@
 [user]
   name = Edward Loveall
   email = edward@edwardloveall.com
+	signingkey = 789A4AE983AC8901
 
 [alias]
   create-branch = !sh -c 'git push origin HEAD:refs/heads/$1 && git fetch origin && git branch --track $1 origin/$1 && cd . && git checkout $1' -
@@ -55,6 +56,7 @@
 
 [commit]
   template = ~/.gitmessage
+	gpgsign = true
 
 [fetch]
   prune = true
