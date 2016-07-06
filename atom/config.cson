@@ -30,8 +30,7 @@
       "tomorrow"
     ]
   editor:
-    fontFamily: "Inconsolata"
-    fontSize: 17
+    fontFamily: "Mononoki"
     invisibles: {}
     scrollPastEnd: true
     softWrap: true
