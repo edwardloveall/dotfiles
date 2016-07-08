@@ -39,10 +39,6 @@
   remote = origin
   merge = refs/heads/master
 
-# Use template dir for git repos
-[init]
-  templatedir = ~/.git_template
-
 # Use a global ignore file
 [core]
   editor = edit --wait --new-window
