@@ -12,7 +12,7 @@
 [alias]
   create-branch = checkout -b
   delete-branch = !sh -c 'git push origin :$1 && git branch -D $1' -
-  branch-commits = log master..HEAD
+  branch-log = log master..HEAD
   stage = add
   unstage = reset
   store = commit
