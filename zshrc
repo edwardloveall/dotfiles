@@ -104,10 +104,9 @@ if [[ "$TERM_PROGRAM" == "Apple_Terminal" ]] && [[ -z "$INSIDE_EMACS" ]]; then
 fi
 
 # Environment vars
-export POSTGRES_USERNAME='edwardloveall'
-export PGUSER=edwardloveall
-export ATOM_PATH='/Users/edwardloveall/Applications/'
-
+if [[ -a ~/.env ]]; then
+  source ~/.env
+fi
 
 # Set window title to current directory
 precmd () {print -Pn "\e]2;%1d\a"}
