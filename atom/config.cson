@@ -6,9 +6,7 @@
     randomColor: false
     uppercaseColorValues: true
   core:
-    allowPendingPaneItems: false
     audioBeep: false
-    automaticallyUpdate: false
     disabledPackages: [
       "metrics"
       "background-tips"
@@ -21,7 +19,6 @@
       "deprecation-cop"
       "autocomplete-atom-api"
       "linter-scss-lint"
-      "linter-jshint"
       "language-gfm"
     ]
     openEmptyEditorOnStart: false
@@ -56,6 +53,8 @@
   "linter-scss-lint":
     executablePath: "/usr/local/bin/scss-lint"
   "one-light-ui": {}
+  tabs:
+    addNewTabsAtEnd: true
   "the-closer":
     closeWindowTogetherWithLastTab: false
   "tree-view": {}
