@@ -30,7 +30,6 @@
     ]
   editor:
     fontFamily: "Mononoki"
-    fontSize: 18
     invisibles: {}
     scrollPastEnd: true
     softWrap: true
