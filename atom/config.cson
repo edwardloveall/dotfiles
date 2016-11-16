@@ -6,6 +6,7 @@
     randomColor: false
     uppercaseColorValues: true
   core:
+    allowPendingPaneItems: false
     audioBeep: false
     disabledPackages: [
       "metrics"
