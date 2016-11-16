@@ -51,7 +51,7 @@
   "linter-jshint":
     executablePath: "/usr/local/bin/jslint"
   "linter-rubocop":
-    command: "/Users/edwardloveall/.gem/ruby/latest/bin/rubocop"
+    command: "/usr/local/bin/rubocop"
   "linter-scss-lint":
     executablePath: "/usr/local/bin/scss-lint"
   "one-light-ui": {}
