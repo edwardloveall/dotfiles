@@ -23,6 +23,7 @@
       "language-gfm"
     ]
     openEmptyEditorOnStart: false
+    telemetryConsent: "no"
     themes: [
       "one-light-ui"
       "tomorrow"
