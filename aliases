@@ -10,6 +10,7 @@ alias ...='../..'
 alias l='ls'
 alias ll='ls -al'
 alias lh='ls -Alh'
+alias ffind='find . -name "*$1*"'
 
 # Pretty print the path
 alias path="echo $PATH | tr -s ':' '\n'"
