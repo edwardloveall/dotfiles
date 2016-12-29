@@ -43,6 +43,7 @@ var layoutDual = slate.layout('layoutDual', {
 	'Airmail':  { 'operations': [mainScreenPrimary] },
 	'MailMate':  { 'operations': [mainScreenPrimary] },
 	'ReadKit': 	{ 'operations': [mainScreenPrimary] },
+	'Reeder': 	{ 'operations': [mainScreenPrimary] },
 	'Calendar': { 'operations': [mainScreenPrimary] },
 	'Preview': 	{ 'operations': [mainScreenPrimary] },
 	'Maps': 		{ 'operations': [mainScreenPrimary] },
