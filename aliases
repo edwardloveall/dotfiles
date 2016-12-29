@@ -53,30 +53,6 @@ alias giv="gem install -v"
 alias migrate="rake db:migrate db:rollback && rake db:migrate"
 alias reset_test_db="rake db:drop db:create db:schema:load RAILS_ENV=test"
 
-# File Extensions
-alias -s markdown=atom
-alias -s md=atom
-alias -s html=atom
-alias -s css=atom
-alias -s scss=atom
-alias -s sass=atom
-alias -s js=atom
-alias -s json=atom
-alias -s coffee=atom
-alias -s rb=atom
-alias -s erb=atom
-alias -s perl=atom
-alias -s py=atom
-alias -s java=atom
-alias -s php=atom
-alias -s cpp=atom
-alias -s m=atom
-alias -s h=atom
-alias -s c=atom
-alias -s as=atom
-alias -s xml=atom
-alias -s csv=atom
-
 # centos
 
 alias yi='sudo yum -y install'
