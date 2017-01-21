@@ -1,0 +1,1 @@
+fold -s -w 72 "$1" | sponge "$1"
