@@ -1,46 +1,9 @@
-/*
- * Your Stylesheet
- *
- * This stylesheet is loaded when Atom starts up and is reloaded automatically when it is changed.
- *
- * If you are unfamiliar with LESS, you can read more about it here:
- * http://www.lesscss.org
- */
-
-@gutter-bg: #e6e6e6;
-@current-line-bg: lighten(@gutter-bg, 4);
-
-atom-text-editor {
-  background-color: #fff !important;
-  line-height: 1.3em;
-  padding-right: 1ex;
-
-  &::shadow {
-    .gutter {
-      background-color: @gutter-bg;
-      border-right: 1px solid darken(@gutter-bg, 10);
-      font-size: 0.9em;
-      padding-top: 0.5em;
-
-      .cursor-line {
-        background: @current-line-bg;
-      }
-    }
-
-    .scroll-view {
-      padding: 0.5em;
-    }
-  }
-}
-
-atom-text-editor.mini::shadow {
-  .scroll-view {
-    padding: 0;
-  }
-}
-
 .tab-bar {
-  .tab.active[data-type$="Editor"]::after {
-    border-bottom-color: #d6d6d6;
+  .tab.active {
+    background-color: white;
+  }
+
+  .tab {
+    transition-duration: 0ms;
   }
 }
