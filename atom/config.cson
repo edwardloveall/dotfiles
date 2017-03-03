@@ -1,6 +1,6 @@
 "*":
   "autocomplete-plus":
-    confirmCompletion: "enter"
+    confirmCompletion: "tab"
   "color-picker":
     preferredFormat: "HEX"
     randomColor: false
@@ -21,6 +21,7 @@
       "autocomplete-atom-api"
       "linter-scss-lint"
       "language-gfm"
+      "autocomplete-plus"
     ]
     openEmptyEditorOnStart: false
     telemetryConsent: "no"
