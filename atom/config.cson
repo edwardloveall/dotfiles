@@ -26,8 +26,8 @@
     openEmptyEditorOnStart: false
     telemetryConsent: "no"
     themes: [
-      "one-light-ui"
-      "tomorrow"
+      "northem-light-atom-ui"
+      "base16-tomorrow-light-theme"
     ]
   editor:
     fontFamily: "Mononoki"
@@ -55,6 +55,8 @@
     command: "/usr/local/bin/rubocop"
   "linter-scss-lint":
     executablePath: "/usr/local/bin/scss-lint"
+  "nord-atom-ui": {}
+  "northem-light-atom-ui": {}
   "one-light-ui": {}
   tabs:
     addNewTabsAtEnd: true
