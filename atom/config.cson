@@ -50,7 +50,7 @@
     showErrorTabProject: false
     statusIconScope: "File"
   "linter-jshint":
-    executablePath: "/usr/local/bin/jslint"
+    executablePath: "/usr/local/bin/jshint"
   "linter-rubocop":
     command: "/Users/edward/.rbenv/versions/2.1.5/bin/rubocop"
     disableWhenNoConfigFile: true
