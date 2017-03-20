@@ -19,7 +19,6 @@
       "wrap-guide"
       "deprecation-cop"
       "autocomplete-atom-api"
-      "linter-scss-lint"
       "language-gfm"
       "autocomplete-plus"
     ]
@@ -55,7 +54,7 @@
     command: "/Users/edward/.rbenv/versions/2.1.5/bin/rubocop"
     disableWhenNoConfigFile: true
   "linter-scss-lint":
-    executablePath: "/usr/local/bin/scss-lint"
+    executablePath: "/Users/edward/.rbenv/versions/2.1.5/bin/scss-lint"
   "nord-atom-ui": {}
   "northem-light-atom-ui": {}
   "one-light-ui": {}
