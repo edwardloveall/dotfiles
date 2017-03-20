@@ -1,15 +1,11 @@
-if [[ -e /usr/local/share/chruby ]]; then
-  source /usr/local/share/chruby/chruby.sh
-  source /usr/local/share/chruby/auto.sh
-fi
-
-chruby ruby-2
-
 # load our own completion functions
 fpath=(~/.zsh/completion $fpath)
 
 # path
 export PATH="$HOME/.bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin/psql:$HOME/.burrow/bin:$PATH"
+
+# rbenv
+eval "$(rbenv init - --no-rehash)"
 
 # completion
 autoload -U compinit
