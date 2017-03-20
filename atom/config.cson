@@ -52,7 +52,8 @@
   "linter-jshint":
     executablePath: "/usr/local/bin/jslint"
   "linter-rubocop":
-    command: "/usr/local/bin/rubocop"
+    command: "/Users/edward/.rbenv/versions/2.1.5/bin/rubocop"
+    disableWhenNoConfigFile: true
   "linter-scss-lint":
     executablePath: "/usr/local/bin/scss-lint"
   "nord-atom-ui": {}
