@@ -21,6 +21,7 @@
       "autocomplete-atom-api"
       "language-gfm"
       "autocomplete-plus"
+      "linter-rubocop"
     ]
     openEmptyEditorOnStart: false
     telemetryConsent: "no"
