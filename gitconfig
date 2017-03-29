@@ -48,7 +48,7 @@
 
 # Use a global ignore file
 [core]
-  editor = atom --wait
+  editor = vim
 	excludesfile = /Users/edwardloveall/.gitignore_global
 	pager = diff-so-fancy | less --tabs=4 -RFX
 
