@@ -26,7 +26,7 @@
     openEmptyEditorOnStart: false
     telemetryConsent: "no"
     themes: [
-      "northem-light-atom-ui"
+      "one-light-ui"
       "base16-tomorrow-light-theme"
     ]
   editor:
@@ -37,24 +37,20 @@
     softWrapAtPreferredLineLength: true
   "exception-reporting":
     userId: "05769e4a-414c-0234-3c4f-848d932dafcd"
+  "file-icons":
+    strategies:
+      modelines: false
   linter:
-    gutterEnabled: false
-    gutterPosition: "Left"
     ignoredLinterErrors: [
       "rubocop"
     ]
     lintOnChange: false
-    lintOnFly: false
-    showErrorPanel: false
-    showErrorTabFile: false
-    showErrorTabProject: false
-    statusIconScope: "File"
   "linter-jshint":
     executablePath: "/usr/local/bin/jslint"
-  "linter-rubocop":
-    command: "/usr/local/bin/rubocop"
+  "linter-rubocop": {}
   "linter-scss-lint":
     executablePath: "/usr/local/bin/scss-lint"
+  "linter-ui-default": {}
   "nord-atom-ui": {}
   "northem-light-atom-ui": {}
   "one-light-ui": {}
