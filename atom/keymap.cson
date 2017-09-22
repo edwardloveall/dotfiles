@@ -24,3 +24,5 @@
 'atom-text-editor:not([mini])':
   'alt-cmd-down': 'sort-lines:sort'
   'alt-cmd-up': 'sort-lines:reverse-sort'
+  'cmd-shift-c': 'editor:copy-path'
+  'cmd-ctrl-c': 'editor:copy-project-path'
