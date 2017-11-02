@@ -41,7 +41,7 @@ var layoutDual = slate.layout('layoutDual', {
 	'Chrome': 	{ 'operations': [mainScreenPrimary] },
 	'iTunes': 	{ 'operations': [mainScreenPrimary] },
 	'Airmail':  { 'operations': [mainScreenPrimary] },
-	'MailMate':  { 'operations': [mainScreenPrimary] },
+	'MailMate': { 'operations': [mainScreenPrimary] },
 	'ReadKit': 	{ 'operations': [mainScreenPrimary] },
 	'Reeder': 	{ 'operations': [mainScreenPrimary] },
 	'Calendar': { 'operations': [mainScreenPrimary] },
@@ -53,6 +53,7 @@ var layoutDual = slate.layout('layoutDual', {
 	'Atom':					{ 'operations': [mainScreenRight], repeat: true },
 	'Terminal':			{ 'operations': [mainScreenLeft] },
 	'Slack':				{ 'operations': [laptopScreenPrimary] },
+	'Gitter':				{ 'operations': [laptopScreenPrimary] },
 	'Adium':				{ 'operations': [adium], repeat: true },
 	'Twitterrific':	{ 'operations': [mainScreenSocial] },
 	'Messages':			{ 'operations': [mainScreenSocial] }
@@ -63,7 +64,7 @@ var layoutSingular = slate.layout('layoutSingular', {
 	'Chrome': 	{ 'operations': [laptopScreenPrimary] },
 	'iTunes': 	{ 'operations': [laptopScreenPrimary] },
 	'Airmail':  { 'operations': [laptopScreenPrimary] },
-	'MailMate':  { 'operations': [laptopScreenPrimary] },
+	'MailMate': { 'operations': [laptopScreenPrimary] },
 	'ReadKit': 	{ 'operations': [laptopScreenPrimary] },
 	'Reeder': 	{ 'operations': [laptopScreenPrimary] },
 	'Calendar': { 'operations': [laptopScreenPrimary] },
@@ -75,6 +76,7 @@ var layoutSingular = slate.layout('layoutSingular', {
 	'Atom':					{ 'operations': [laptopScreenPrimary], repeat: true },
 	'Terminal':			{ 'operations': [laptopScreenPrimary] },
 	'Slack':				{ 'operations': [laptopScreenPrimary] },
+	'Gitter':				{ 'operations': [laptopScreenPrimary] },
 	'Adium':				{ 'operations': [adium], repeat: true },
 	'Twitterrific':	{ 'operations': [laptopScreenSocial] },
 	'Messages':			{ 'operations': [laptopScreenSocial] }
