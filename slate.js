@@ -21,19 +21,11 @@ var laptopBase = mainBase.dup(screenLaptop);
 
 var mainScreenPrimary = mainBase.dup(sizePrimary),
     mainScreenLeft = mainBase.dup(sizeLeft),
-     mainScreenRight = mainBase.dup(sizeRight),
-     mainScreenSocial = mainBase.dup(sizeSocialFeed),
-     laptopScreenSocial = mainScreenSocial.dup(screenLaptop),
-     laptopScreenPrimary = laptopBase.dup(sizeLaptopPrimary),
-    adiumContactScreen = laptopBase.dup(sizeContactList);
+    mainScreenRight = mainBase.dup(sizeRight),
+    mainScreenSocial = mainBase.dup(sizeSocialFeed),
+    laptopScreenSocial = mainScreenSocial.dup(screenLaptop),
+    laptopScreenPrimary = laptopBase.dup(sizeLaptopPrimary)
 
-var adium = function(win) {
-  if (win.title() === 'Contacts') {
-    win.doOperation(adiumContactScreen);
-  } else {
-    win.doOperation(laptopScreenPrimary);
-  }
-}
 
 // Layouts
 var layoutDual = slate.layout('layoutDual', {
@@ -76,7 +68,6 @@ var layoutSingular = slate.layout('layoutSingular', {
   'Tower':    { 'operations': [laptopScreenPrimary] },
   'Xcode':    { 'operations': [laptopScreenPrimary] },
 
-  'Adium':        { 'operations': [adium], repeat: true },
   'Atom':         { 'operations': [laptopScreenPrimary], repeat: true },
   'Gitter':       { 'operations': [laptopScreenPrimary] },
   'Messages':     { 'operations': [laptopScreenSocial] },
@@ -95,6 +86,7 @@ var twoMonitor = slate.operation('layout', { 'name': layoutDual });
 // Bindings
 slate.bind(key('1'), mainScreenPrimary);
 slate.bind(key('2'), mainScreenSocial);
+slate.bind(key('['), laptopScreenPrimary);
 slate.bind(key('left'), mainScreenLeft);
 slate.bind(key('right'), mainScreenRight);
 
