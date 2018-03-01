@@ -1,4 +1,6 @@
 "*":
+  "atom-package-deps":
+    ignored: []
   "autocomplete-plus":
     confirmCompletion: "tab"
   "color-picker":
@@ -22,6 +24,7 @@
       "linter-scss-lint"
       "language-gfm"
       "autocomplete-plus"
+      "linter-rubocop"
     ]
     openEmptyEditorOnStart: false
     telemetryConsent: "no"
@@ -47,7 +50,8 @@
     lintOnChange: false
   "linter-jshint":
     executablePath: "/usr/local/bin/jslint"
-  "linter-rubocop": {}
+  "linter-rubocop":
+    disableWhenNoConfigFile: true
   "linter-scss-lint":
     executablePath: "/usr/local/bin/scss-lint"
   "linter-ui-default": {}
