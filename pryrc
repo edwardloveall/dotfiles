@@ -9,3 +9,11 @@ class Object
     (methods - Object.new.methods).sort
   end
 end
+
+if defined?(ActiveRecord::Relation)
+  class ActiveRecord::Relation
+    def sample
+      order('RANDOM()').first
+    end
+  end
+end
