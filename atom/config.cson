@@ -21,34 +21,30 @@
       "autocomplete-atom-api"
       "language-gfm"
       "autocomplete-plus"
-      "linter-rubocop"
+      "file-icons"
+      "color-picker"
     ]
     openEmptyEditorOnStart: false
-    telemetryConsent: "no"
+    telemetryConsent: "limited"
     themes: [
-      "northem-light-atom-ui"
+      "one-light-ui-tabs"
       "base16-tomorrow-light-theme"
     ]
+    titleBar: "hidden"
   editor:
     fontFamily: "Mononoki"
     invisibles: {}
+    preferredLineLength: 110
     scrollPastEnd: true
     softWrap: true
     softWrapAtPreferredLineLength: true
   "exception-reporting":
     userId: "05769e4a-414c-0234-3c4f-848d932dafcd"
   linter:
-    gutterEnabled: false
-    gutterPosition: "Left"
     ignoredLinterErrors: [
       "rubocop"
     ]
     lintOnChange: false
-    lintOnFly: false
-    showErrorPanel: false
-    showErrorTabFile: false
-    showErrorTabProject: false
-    statusIconScope: "File"
   "linter-jshint":
     executablePath: "/usr/local/bin/jshint"
   "linter-rubocop":
@@ -56,6 +52,11 @@
     disableWhenNoConfigFile: true
   "linter-scss-lint":
     executablePath: "/Users/edward/.rbenv/versions/2.1.5/bin/scss-lint"
+  "linter-ui-default": {}
+  minimap:
+    plugins:
+      "git-diff": true
+      "git-diffDecorationsZIndex": 0
   "nord-atom-ui": {}
   "northem-light-atom-ui": {}
   "one-light-ui": {}
