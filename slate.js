@@ -51,7 +51,7 @@ var layoutDual = slate.layout('layoutDual', {
 	'Xcode': 		{ 'operations': [mainScreenPrimary] },
 	'Atom':		  { 'operations': [mainScreenPrimary], repeat: true },
 
-	'Terminal':			{ 'operations': [mainScreenLeft] },
+	'Terminal':			{ 'operations': [mainScreenRight] },
 	'Slack':				{ 'operations': [laptopScreenPrimary] },
 	'Adium':				{ 'operations': [adium], repeat: true },
 	'Twitterrific':	{ 'operations': [mainScreenSocial] },
