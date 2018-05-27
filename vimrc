@@ -27,7 +27,7 @@ filetype plugin indent on
 
 " ====== Look & Feel ======
 colorscheme Tomorrow
-set number
+set relativenumber
 set guifont=Inconsolata:h13
 
 " Set tabs to two spaces
