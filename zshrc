@@ -8,8 +8,14 @@ chruby ruby-2
 # load our own completion functions
 fpath=(~/.zsh/completion $fpath)
 
-# path
-export PATH="$HOME/.bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin/psql:$HOME/.burrow/bin:$PATH"
+# Local and default paths
+export PATH="$HOME/.bin:/usr/local/bin:/usr/local/sbin:$PATH"
+
+# Postgres path
+export PATH="/usr/local/bin/psql:$PATH"
+
+# Rust bin path
+export PATH="$HOME/.cargo/bin/:$PATH"
 
 # completion
 autoload -U compinit
