@@ -58,6 +58,15 @@
   "nord-atom-ui": {}
   "northem-light-atom-ui": {}
   "one-light-ui": {}
+  "spell-check":
+    grammars: [
+      "source.asciidoc"
+      "source.gfm"
+      "text.git-commit"
+      "text.plain"
+      "text.plain.null-grammar"
+      "text.md"
+    ]
   tabs:
     addNewTabsAtEnd: true
   "the-closer":
