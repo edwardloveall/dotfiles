@@ -77,3 +77,8 @@
   "tree-view": {}
   welcome:
     showOnStartup: false
+".source.supercollider":
+  editor:
+    autoIndent: true
+    tabLength: 2
+    tabType: "soft"
