@@ -12,5 +12,3 @@
 #   editor = editorView.getEditor()
 #   if path.extname(editor.getPath()) is '.md'
 #     editor.setSoftWrap(true)
-
-process.env['PATH'] += ':/usr/local/bin'
