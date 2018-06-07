@@ -3,11 +3,6 @@ alias remove_all_DS_Store_recursive="find . -name '*.DS_Store' -type f -delete"
 alias serve="ruby -rwebrick -e\"s = WEBrick::HTTPServer.new(:Port => 3000, :DocumentRoot => Dir.pwd); trap('INT') { s.shutdown }; s.start\""
 
 # Unix
-alias tlf="tail -f"
-alias ln='ln -v'
-alias mkdir='mkdir -p'
-alias ...='../..'
-alias l='ls'
 alias ll='ls -al'
 alias lh='ls -Alh'
 alias ffind='find . -name "*$1*"'
@@ -17,42 +12,28 @@ alias path="echo $PATH | tr -s ':' '\n'"
 
 # git
 alias gb='git branch'
-alias gba='git branch -a'
-alias gc='git commit -v'
 alias gco='git checkout'
 alias gcom='gco master'
-alias gfo='git fetch origin'
 alias gl='git log --graph'
 alias gll='git log --format=medium'
-alias gm='git merge'
 alias gp='git push'
 alias gpo='git push origin'
 alias gpom='gpo master'
 alias gpl='git pull'
 alias gplo='git pull origin'
 alias gplom='git pull origin master'
-alias gplr='git pull --rebase'
 alias gr='git rebase'
 alias gra='git rebase --abort'
 alias grc='git rebase --continue'
-alias grm='git rm'
-alias gsl='git status'
 alias gs='git status -s'
 alias gcne='git commit --amend --no-edit'
 
 # Bundler
-alias b="bundle"
 alias be="bundle exec"
-alias bake="bundle exec rake"
-
-# Rubygems
-alias gi="gem install"
-alias giv="gem install -v"
 
 # Rails
 alias migrate="rake db:migrate db:rollback && rake db:migrate"
 alias reset_test_db="rake db:drop db:create db:schema:load RAILS_ENV=test"
 
 # centos
-
 alias yi='sudo yum -y install'
