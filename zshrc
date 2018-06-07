@@ -117,9 +117,6 @@ fi
 # Set window title to current directory
 precmd () {print -Pn "\e]2;%1d\a"}
 
-# Highlighting
-source ~/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
 export PKG_CONFIG_PATH="/opt/local/lib/pkgconfig:$PKG_CONFIG_PATH"
 
 # require for crystal compiler. See https://github.com/crystal-lang/crystal/issues/4745
