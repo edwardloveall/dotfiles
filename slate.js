@@ -4,7 +4,7 @@ var key = function(key) {
 }
 
 // Variables
-var laptop = '1440x900',
+var laptop = '1680x1050',
     sizePrimary = { 'direction': 'top-left', 'width': 'screenSizeX*.9', 'height': 'screenSizeY' },
     sizeLaptopPrimary = { 'direction': 'top-left', 'width': 'screenSizeX*.9', 'height': 'screenSizeY' },
     sizeSocialFeed = { 'direction': 'top-left', 'width': 'screenSizeX*.2', 'height': 'screenSizeY' },
