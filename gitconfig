@@ -6,8 +6,8 @@
 
 [user]
 	name = Edward Loveall
-	email = edward@edwardloveall.com
-	signingkey = 789A4AE983AC8901
+	email = edward@thoughtbot.com
+	signingkey = 17516911DA47019A
 
 [alias]
   create-branch = checkout -b
