@@ -1,9 +1,4 @@
-if [[ -e /usr/local/share/chruby ]]; then
-  source /usr/local/share/chruby/chruby.sh
-  source /usr/local/share/chruby/auto.sh
-fi
-
-chruby ruby-2
+source /Users/edwardloveall/.asdf/asdf.sh
 
 # load our own completion functions
 fpath=(~/.zsh/completion $fpath)
