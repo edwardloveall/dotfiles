@@ -116,3 +116,5 @@ export PKG_CONFIG_PATH="/opt/local/lib/pkgconfig:$PKG_CONFIG_PATH"
 
 # require for crystal compiler. See https://github.com/crystal-lang/crystal/issues/4745
 export PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig:$PKG_CONFIG_PATH"
+
+export PATH="$HOME/.bin:$PATH"
