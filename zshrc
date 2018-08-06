@@ -25,8 +25,8 @@ zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:
 # Autocomplete ignores
 zstyle ':completion:*:*' ignored-patterns '*ORIG_HEAD'
 
-# use textmate as an editor
-export EDITOR="vim"
+# set editor
+export EDITOR="atom"
 
 # aliases
 if [ -e "$HOME/.aliases" ]; then
