@@ -21,20 +21,24 @@
       "wrap-guide"
       "deprecation-cop"
       "autocomplete-atom-api"
-      "linter-scss-lint"
       "language-gfm"
       "autocomplete-plus"
-      "linter-rubocop"
+      "vim-mode-plus"
     ]
     openEmptyEditorOnStart: false
+    packagesWithKeymapsDisabled: [
+      "sort-lines"
+    ]
     telemetryConsent: "no"
     themes: [
-      "one-light-ui-tabs"
+      "one-light-ui"
       "base16-tomorrow-light-theme"
     ]
+  "crystal-tools":
+    useSpecOnSrc: false
   editor:
     fontFamily: "Mononoki"
-    fontSize: 18
+    fontSize: 19
     invisibles: {}
     scrollPastEnd: true
     softWrap: true
@@ -52,8 +56,9 @@
   "linter-jshint":
     executablePath: "/usr/local/bin/jslint"
   "linter-rubocop":
-    disableWhenNoConfigFile: true
+    command: "/usr/local/bin/rubocop"
   "linter-scss-lint":
+    disableWhenNoConfigFileInPath: true
     executablePath: "/usr/local/bin/scss-lint"
   "linter-ui-default": {}
   "markdown-preview":
