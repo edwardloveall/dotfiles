@@ -26,7 +26,7 @@ zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:
 zstyle ':completion:*:*' ignored-patterns '*ORIG_HEAD'
 
 # set editor
-export EDITOR="atom"
+export EDITOR="code"
 
 # aliases
 if [ -e "$HOME/.aliases" ]; then
