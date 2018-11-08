@@ -1,16 +1,16 @@
+# Local and default paths
+export PATH="$HOME/.bin:/usr/local/bin:/usr/local/sbin:$PATH"
+
 source /Users/edwardloveall/.asdf/asdf.sh
 
 # load our own completion functions
 fpath=(~/.zsh/completion $fpath)
 
-# Local and default paths
-export PATH="$HOME/.bin:/usr/local/bin:/usr/local/sbin:$PATH"
-
 # Postgres path
-export PATH="/usr/local/bin/psql:$PATH"
+export PATH="$PATH:/usr/local/bin/psql"
 
 # Rust bin path
-export PATH="$HOME/.cargo/bin/:$PATH"
+export PATH="$PATH:$HOME/.cargo/bin/"
 
 # completion
 autoload -U compinit
@@ -116,5 +116,3 @@ export PKG_CONFIG_PATH="/opt/local/lib/pkgconfig:$PKG_CONFIG_PATH"
 
 # require for crystal compiler. See https://github.com/crystal-lang/crystal/issues/4745
 export PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig:$PKG_CONFIG_PATH"
-
-export PATH="$HOME/.bin:$PATH"
