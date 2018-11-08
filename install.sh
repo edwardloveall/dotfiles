@@ -33,3 +33,7 @@ for name in *; do
     fi
   fi
 done
+
+ln -s $(realpath vscode-config/settings.json) "$HOME/Library/Application Support/Code/User/settings.json"
+ln -s $(realpath vscode-config/keybindings.json) "$HOME/Library/Application Support/Code/User/keybindings.json"
+ln -s $(realpath vscode-config/snippets) "$HOME/Library/Application Support/Code/User/snippets"
