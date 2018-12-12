@@ -1,6 +1,6 @@
 # One-liners
 alias remove_all_DS_Store_recursive="find . -name '*.DS_Store' -type f -delete"
-alias serve="ruby -rwebrick -e\"s = WEBrick::HTTPServer.new(:Port => 3000, :DocumentRoot => Dir.pwd); trap('INT') { s.shutdown }; s.start\""
+alias serve="ruby -run -e httpd . --port=3000"
 
 # Unix
 alias ll='ls -al'
