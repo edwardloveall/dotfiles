@@ -6,9 +6,6 @@ source ~/.asdf/asdf.sh
 # load our own completion functions
 fpath=(~/.zsh/completion $fpath)
 
-# Postgres path
-export PATH="$PATH:/usr/local/bin/psql"
-
 # Rust bin path
 export PATH="$PATH:$HOME/.cargo/bin/"
 
