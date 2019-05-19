@@ -38,3 +38,6 @@ alias reset_test_db="rake db:drop db:create db:schema:load RAILS_ENV=test"
 
 # centos
 alias yi='sudo yum -y install'
+
+# VSCode
+alias code='vscodium'
