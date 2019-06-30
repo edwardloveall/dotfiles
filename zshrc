@@ -1,7 +1,7 @@
 # Local and default paths
 export PATH="$HOME/.bin:/usr/local/bin:/usr/local/sbin:$PATH"
 
-source /Users/edwardloveall/.asdf/asdf.sh
+source ~/.asdf/asdf.sh
 
 # load our own completion functions
 fpath=(~/.zsh/completion $fpath)
