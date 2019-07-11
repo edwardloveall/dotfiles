@@ -16,6 +16,7 @@
   stage = add
   unstage = reset
   store = commit
+  pr = !sh -c 'git fetch origin pull/$1/head:pr/$1 && git checkout pr/$1' -
 
 [color]
   branch = auto
