@@ -119,3 +119,6 @@ export PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig:$PKG_CONFIG_PATH"
 
 # fzf key bindings and fuzzy completion:
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# ripgrep config location
+export RIPGREP_CONFIG_PATH=~/.ripgreprc
