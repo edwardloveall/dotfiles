@@ -12,6 +12,7 @@ alias path="echo $PATH | tr -s ':' '\n'"
 
 # git
 alias gb='git branch'
+alias gbb="git branch | grep -v '^*' | fzf | xargs git checkout"
 alias gco='git checkout'
 alias gcom='gco master'
 alias gl='git log --graph'
