@@ -28,6 +28,11 @@ zstyle ':completion:*:*' ignored-patterns '*ORIG_HEAD'
 # set editor
 export EDITOR="code"
 
+# functions
+if [ -e "$HOME/.functions" ]; then
+  source "$HOME/.functions"
+fi
+
 # aliases
 if [ -e "$HOME/.aliases" ]; then
   source "$HOME/.aliases"
