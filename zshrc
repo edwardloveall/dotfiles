@@ -128,6 +128,5 @@ export PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig:$PKG_CONFIG_PATH"
 # ripgrep config location
 export RIPGREP_CONFIG_PATH=~/.ripgreprc
 
-if [ -e "$HOME/.zshrc.local" ]; then
-  source "$HOME/.zshrc.local"
-fi
+# Load a .local file if it exists
+[ -f "$HOME/.zshrc.local" ] && source "$HOME/.zshrc.local"
