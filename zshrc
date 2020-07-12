@@ -130,3 +130,5 @@ export RIPGREP_CONFIG_PATH=~/.ripgreprc
 
 # Load a .local file if it exists
 [ -f "$HOME/.zshrc.local" ] && source "$HOME/.zshrc.local"
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
