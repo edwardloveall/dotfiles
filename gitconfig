@@ -46,7 +46,7 @@
 
 [init]
   templatedir = ~/.git_template
-  defaultBranch = main
+	defaultBranch = main
 
 # Use a global ignore file
 [core]
