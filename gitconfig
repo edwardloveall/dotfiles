@@ -7,7 +7,7 @@
 [user]
 	name = Edward Loveall
 	email = edward@edwardloveall.com
-	signingkey = 789A4AE983AC8901
+	signingkey = A7606DFEC2BA731F
 
 [alias]
   create-branch = checkout -b
