@@ -52,7 +52,7 @@
 [core]
 	editor = nova -w
 	excludesfile = /Users/edwardloveall/.gitignore_global
-	pager = diff-so-fancy | less --tabs=4 -RFX
+	pager = delta
 
 [credential]
   helper = osxkeychain
@@ -84,3 +84,16 @@
 [mergetool "sourcetree"]
 	cmd = /Users/edwardloveall/Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
+
+[delta]
+  side-by-side = true
+  light = true
+  plus-style = black 187
+  plus-emph-style = black bold 186
+  plus-empty-line-marker-style = black bold ul 187
+  minus-style = black 224
+  minus-emph-style = black bold 217
+  line-numbers-left-style = 247
+  line-numbers-right-style = 247
+  file-style = 247
+  file-decoration-style = 247 ul
