@@ -1,6 +1,7 @@
 # Local and default paths
 export PATH="$HOME/.bin:/usr/local/bin:/usr/local/sbin:$PATH"
 
+# asdf
 source ~/.asdf/asdf.sh
 
 # load our own completion functions
@@ -12,12 +13,12 @@ export PATH="$PATH:/usr/local/bin/psql"
 # Rust bin path
 export PATH="$PATH:$HOME/.cargo/bin/"
 
+# yarn path
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
 # completion
 autoload -U compinit
 compinit
-
-# automatically enter directories without cd
-setopt auto_cd
 
 # case insensitive completion for cd etc *N*
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
@@ -26,7 +27,7 @@ zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:
 zstyle ':completion:*:*' ignored-patterns '*ORIG_HEAD'
 
 # set editor
-export EDITOR="code"
+export EDITOR="nova"
 
 # functions
 if [ -e "$HOME/.functions" ]; then
@@ -64,50 +65,15 @@ SAVEHIST=4096
 setopt auto_pushd
 export dirstacksize=5
 
-# awesome cd movements from zshkit
-setopt AUTOCD
-setopt AUTOPUSHD PUSHDMINUS PUSHDSILENT PUSHDTOHOME
+# automatically enter directories without cd
+setopt auto_cd
 setopt cdablevars
+
+# ability to `cd -` and `cd -2`, `cd -3`, etc
+setopt AUTOPUSHD PUSHDMINUS PUSHDSILENT PUSHDTOHOME
 
 # Enable extended globbing
 setopt EXTENDED_GLOB
-
-# Tell the terminal about the working directory whenever it changes.
-if [[ "$TERM_PROGRAM" == "Apple_Terminal" ]] && [[ -z "$INSIDE_EMACS" ]]; then
-
-    update_terminal_cwd() {
-        # Identify the directory using a "file:" scheme URL, including
-        # the host name to disambiguate local vs. remote paths.
-
-        # Percent-encode the pathname.
-        local URL_PATH=''
-        {
-            # Use LANG=C to process text byte-by-byte.
-            local i ch hexch LANG=C
-            for ((i = 1; i <= ${#PWD}; ++i)); do
-                ch="$PWD[i]"
-                if [[ "$ch" =~ [/._~A-Za-z0-9-] ]]; then
-                    URL_PATH+="$ch"
-                else
-                    hexch=$(printf "%02X" "'$ch")
-                    URL_PATH+="%$hexch"
-                fi
-            done
-        }
-
-        local PWD_URL="file://$HOST$URL_PATH"
-        #echo "$PWD_URL"        # testing
-        printf '\e]7;%s\a' "$PWD_URL"
-    }
-
-    # Register the function so it is called whenever the working
-    # directory changes.
-    autoload add-zsh-hook
-    add-zsh-hook chpwd update_terminal_cwd
-
-    # Tell the terminal about the initial directory.
-    update_terminal_cwd
-fi
 
 # Environment vars
 if [[ -a ~/.env ]]; then
@@ -130,5 +96,3 @@ export RIPGREP_CONFIG_PATH=~/.ripgreprc
 
 # Load a .local file if it exists
 [ -f "$HOME/.zshrc.local" ] && source "$HOME/.zshrc.local"
-
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"

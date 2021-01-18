@@ -1,6 +1,9 @@
 [push]
   default = tracking
 
+[pull]
+  ff = only
+
 [format]
   pretty = %Cblue%h%Creset %Cgreen[%ar]%Creset (%an) %s
 

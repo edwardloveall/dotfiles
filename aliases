@@ -4,8 +4,6 @@ alias serve="ruby -run -e httpd . --port=3000"
 
 # Unix
 alias ll='ls -al'
-alias lh='ls -Alh'
-alias ffind='find . -name "*$1*"'
 
 # git
 alias gb='git branch'
@@ -29,10 +27,6 @@ alias gcne='git commit --amend --no-edit'
 
 # Bundler
 alias be="bundle exec"
-
-# Rails
-alias migrate="rake db:migrate db:rollback && rake db:migrate"
-alias reset_test_db="rake db:drop db:create db:schema:load RAILS_ENV=test"
 
 # centos
 alias yi='sudo yum -y install'

@@ -1,5 +1,0 @@
-#!/bin/sh
-
-remote_url=$(git remote get-url origin)
-repo=$(echo $remote_url | awk -F'[:\.]' '{print $3}')
-open "https://github.com/$repo"
